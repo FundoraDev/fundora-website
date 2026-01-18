@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#000000] text-white px-6 py-4 flex items-center justify-between">
+    <nav className="sticky top-0 bg-[#000000] h-[68px] text-white px-6 py-4 flex items-center justify-between">
       {/* Logo */}
       <Link href="/" className="flex items-center gap-2">
         <Image
@@ -67,9 +67,9 @@ export default function Navbar() {
       </div>
 
       {/* Right Side: Language Selector + Buttons */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-[10px]">
         {/* Language Selector */}
-        <div className="flex items-center gap-0.4 cursor-pointer hover:text-gray-300 transition-colors">
+        <div className="flex items-center gap-2 cursor-pointer hover:text-gray-300 transition-colors">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -104,13 +104,13 @@ export default function Navbar() {
         {/* Buttons */}
         <Link
           href="/login"
-          className="px-4 py-2 bg-black border border-yellow-500 text-white  rounded-[36px] text-sm font-medium hover:bg-gray-900 transition-colors"
+          className="px-4 py-2 bg-black border border-yellow-500 text-white  rounded-[36px] text-sm font-semibold hover:bg-gray-900 transition-colors"
         >
-          <p className="bg-gradient-to-r from-[#C3A346] to-[#FEEF9C]  to-[#C7AB4F] bg-clip-text text-transparent inline-block">Log in</p>
+          <p className="bg-gradient-to-r from-[#C3A346] to-[#FEEF9C]  to-[#C7AB4F] bg-clip-text text-transparent inline-block ">Log in</p>
         </Link>
         <Link
           href="/signup"
-          className="px-4 py-2 bg-white border border-black text-black rounded-[36px] text-sm font-medium hover:bg-gray-100 transition-colors"
+          className="px-4 py-2 bg-white border border-black text-black rounded-[36px] text-sm hover:bg-gray-100 transition-colors font-semibold"
         >
           Sign up
         </Link>
