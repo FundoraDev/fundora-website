@@ -53,20 +53,21 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-gray-700 justify-center md:justify-start items-center">
             <Link
               href="/customer-relationship-summaries"
-              className="hover:text-black transition-colors"
+              className="hover:text-black transition-colors underline"
             >
               Customer Relationship Summaries
             </Link>
+            <div className="h-[36px] bg-[#808080] border border-[#808080] hidden md:block"></div>
             <Link
               href="/finra-brokercheck"
-              className="hover:text-black transition-colors"
+              className="hover:text-black transition-colors underline"
             >
               FINRA&apos;s BrokerCheck
             </Link>
           </div>
 
           {/* Social Media */}
-          <div className="flex flex-col md:flex-row items-center gap-2 md:justify-start justify-center text-gray-700">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:justify-start justify-center text-gray-700 text-black">
             <span className="text-sm mb-1 md:mb-0 md:mr-2">Follow us on</span>
             <div className="flex items-center gap-3">
               <Link
@@ -121,12 +122,12 @@ export default function Footer() {
 
       {/* Main Footer Content */}
       <div className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] px-6 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-15">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 text-[16px]">
             {/* Product Column */}
             <div>
-              <h3 className="font-semibold mb-4 text-lg">Product</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="font-bold mb-4">Product</h3>
+              <ul className="space-y-2 font-medium">
                 <li>
                   <Link
                     href="/mutual-funds"
@@ -196,8 +197,8 @@ export default function Footer() {
 
             {/* Company Column */}
             <div>
-              <h3 className="font-semibold mb-4 text-lg">Company</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="font-bold mb-4">Company</h3>
+              <ul className="space-y-2 font-medium">
                 <li>
                   <Link
                     href="/about"
@@ -248,8 +249,8 @@ export default function Footer() {
 
             {/* Legal & Regulatory Column */}
             <div>
-              <h3 className="font-semibold mb-4 text-lg">Legal & Regulatory</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="font-bold mb-4">Legal & Regulatory</h3>
+              <ul className="space-y-2 font-medium">
                 <li>
                   <Link
                     href="/terms-conditions"
@@ -271,7 +272,7 @@ export default function Footer() {
           </div>
 
           {/* Legal Disclaimer Text */}
-          <div className="text-xs leading-relaxed space-y-3 font-light">
+          <div className="text-[14px] md:text-[15.9px] leading-relaxed space-y-3 font-light text-black">
             <p className="font-bold">
               All investing involves risk.
             </p>
@@ -317,14 +318,6 @@ export default function Footer() {
               All rights reserved.
             </p>
           </div>
-
-          {/* Copyright */}
-          {/* <div className="border-t border-black/10 pt-6 text-xs text-gray-700">
-            <p>
-              Fundora, 85 Willow Road, Menlo Park, CA 94025. © 2025 Fundora.
-              All rights reserved.
-            </p>
-          </div> */}
         </div>
       </div>
 
