@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="text-black">
       {/* Hero Section */}
-      <div className="relative bg-black text-white py-20 md:py-32 px-6 overflow-hidden">
+      <div className="relative bg-black text-white py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 overflow-hidden">
         {/* Blurred Background Effect */}
         <div className="absolute inset-0">
           {/* Gradient overlay */}
@@ -18,13 +18,13 @@ export default function Footer() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 sm:mb-6">
             Let&apos;s Build Your Financial Future
           </h1>
 
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="h-px w-12 bg-yellow-400"></div>
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <div className="h-px w-8 sm:w-12 bg-yellow-400"></div>
             <p className="text-lg md:text-xl">
               <span className="bg-yellow-400 text-black px-2 py-1">
                 The Right Way
@@ -32,14 +32,14 @@ export default function Footer() {
             </p>
           </div>
 
-          <p className="text-gray-300 text-base md:text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-300 text-base md:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-2 sm:px-0">
             Whether you&apos;re starting out or refining an existing strategy,
             Fundora helps you move forward with confidence
           </p>
 
           <Link
             href="/consultation"
-            className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] rounded-[36px] inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-4 transition-colors text-[16px] py-[12px] px-[32px]"
+            className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] rounded-[36px] inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 transition-colors text-[16px]"
           >
             Book a Consultation
           </Link>
@@ -47,20 +47,20 @@ export default function Footer() {
       </div>
 
       {/* Top Section with Links and Social Media */}
-      <div className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] border-b border-black/10 px-6 py-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-sm items-center">
+      <div className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] border-b border-black/10 px-4 sm:px-6 py-3 sm:py-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-sm items-center">
           {/* Left Links */}
           <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-gray-700 justify-center md:justify-start items-center">
             <Link
               href="/customer-relationship-summaries"
-              className="hover:text-black transition-colors underline"
+              className="hover:text-black transition-colors underline text-center md:text-left"
             >
               Customer Relationship Summaries
             </Link>
             <div className="h-[36px] bg-[#808080] border border-[#808080] hidden md:block"></div>
             <Link
               href="/finra-brokercheck"
-              className="hover:text-black transition-colors underline"
+              className="hover:text-black transition-colors underline text-center md:text-left"
             >
               FINRA&apos;s BrokerCheck
             </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
           {/* Social Media */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:justify-start justify-center text-gray-700 text-black">
             <span className="text-sm mb-1 md:mb-0 md:mr-2">Follow us on</span>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <Link
                 href="https://twitter.com"
                 target="_blank"
@@ -121,13 +121,13 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] px-6 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-15">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 text-[16px]">
+      <div className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] px-4 sm:px-6 py-8 sm:py-10 md:py-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-5 mb-8 sm:mb-10 md:mb-12 text-[16px]">
             {/* Product Column */}
             <div>
-              <h3 className="font-bold mb-4">Product</h3>
-              <ul className="space-y-2 font-medium">
+              <h3 className="font-bold mb-3 sm:mb-4">Product</h3>
+              <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
                     href="/mutual-funds"
@@ -197,8 +197,8 @@ export default function Footer() {
 
             {/* Company Column */}
             <div>
-              <h3 className="font-bold mb-4">Company</h3>
-              <ul className="space-y-2 font-medium">
+              <h3 className="font-bold mb-3 sm:mb-4">Company</h3>
+              <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
                     href="/about"
@@ -249,8 +249,8 @@ export default function Footer() {
 
             {/* Legal & Regulatory Column */}
             <div>
-              <h3 className="font-bold mb-4">Legal & Regulatory</h3>
-              <ul className="space-y-2 font-medium">
+              <h3 className="font-bold mb-3 sm:mb-4">Legal & Regulatory</h3>
+              <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
                     href="/terms-conditions"
@@ -272,7 +272,7 @@ export default function Footer() {
           </div>
 
           {/* Legal Disclaimer Text */}
-          <div className="text-[14px] md:text-[15.9px] leading-relaxed space-y-3 font-light text-black">
+          <div className="text-[14px] md:text-[15.9px] leading-relaxed space-y-2.5 sm:space-y-3 font-light text-black">
             <p className="font-bold">
               All investing involves risk.
             </p>
@@ -322,9 +322,9 @@ export default function Footer() {
       </div>
 
       {/* Large Logo at Bottom */}
-      <div className="flex flex-row justify-center items-center bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] px-6 pb-8">
+      <div className="flex flex-row justify-center items-center bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] px-4 sm:px-6 pb-6 sm:pb-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-[#63510C] text-6xl md:text-[135.74px] lg:text-[235.74px] 2xl:text-[335.74px] font-bold font-sans">
+          <h1 className="text-[#63510C] text-5xl sm:text-6xl md:text-[135.74px] lg:text-[235.74px] 2xl:text-[335.74px] font-bold font-sans">
             fundora
           </h1>
         </div>
