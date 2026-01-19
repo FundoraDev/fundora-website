@@ -64,7 +64,7 @@ export default function Navbar() {
                   active
                     ? "bg-clip-text text-transparent transition-all"
                     : "text-white hover:text-gray-300 transition-colors"
-                } text-[16px] font-light`}
+                } text-[16px] font-medium`}
                 style={
                   active
                     ? {
@@ -223,7 +223,7 @@ export default function Navbar() {
                     active
                       ? {
                           backgroundImage:
-                            "linear-gradient(to right, rgba(249, 115, 22, 0.52) 0%, rgba(234, 179, 8, 0.8) 50%, rgba(234, 179, 8, 0.55) 100%)",
+                            "bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                           backgroundClip: "text",
@@ -299,7 +299,7 @@ export default function Navbar() {
               }}
               className="px-4 py-2 bg-black border border-yellow-500 text-white rounded-[36px] text-sm font-semibold hover:bg-gray-900 transition-colors text-center"
             >
-              <p className="bg-gradient-to-r from-[#C3A346] to-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent inline-block">
+              <p className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%">
                 Log in
               </p>
             </Link>
