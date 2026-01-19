@@ -22,7 +22,7 @@ export default function Footer() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Let&apos;s Build Your Financial Future
           </h1>
-          
+
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-px w-12 bg-yellow-400"></div>
             <p className="text-lg md:text-xl">
@@ -271,30 +271,52 @@ export default function Footer() {
           </div>
 
           {/* Legal Disclaimer Text */}
-          <div className="text-xs leading-relaxed space-y-3">
-              <p>
-                All investing involves risk.
-              </p>
-              <p>
-                Brokerage services are offered through Fundora Financial LLC, a
-                registered broker dealer (member SIPC), and clearing services
-                through Fundora Securities, LLC, a registered broker dealer
-                (member SIPC).
-              </p>
-              <p>
-                Funds held in your Fundora Cash Wallet account at Sutton Bank
-                are eligible for FDIC insurance up to $250,000...
-              </p>
-              <p>
-                Options trading entails significant risk and is not appropriate
-                for all customers.
-              </p>
-              <p className="mt-4">47840659</p>
-              <p>
+          <div className="text-xs leading-relaxed space-y-3 font-light">
+            <p className="font-bold">
+              All investing involves risk.
+            </p>
+            <p>
+              <span className="font-bold">Brokerage services</span> are offered through Fundora Financial LLC, a registered broker
+              dealer (member
+              SIPC
+              ), and clearing services through Fundora Securities, LLC, a
+              registered broker dealer (member
+              SIPC
+              ). While there is no additional cost to use Robinhood
+              Legend, there are other fees associated with your brokerage account. Please see the
+              fee
+              schedule
+              for more information.
+            </p>
+            <p>
+              <span className="font-bold">Futures and cleared swaps trading</span> is offered by Fundora Derivatives, LLC, a
+              registered futures commission merchant with the Commodity Futures Trading Commission
+              (CFTC) and a Member of the National Futures Association (NFA). RHD is not FDIC insured or
+              SIPC protected.
+            </p>
+            <p>
+              Funds held in your Fundora Cash Wallet account at Sutton Bank are eligible for FDIC
+              insurance up to $250,000 and will not accrue or pay any interest. The availability of FDIC
+              insurance is contingent upon Fundora maintaining records acceptable to the FDIC, as
+              receiver, if Sutton Bank should fail. FDIC insurance limits apply collectively to all of your
+              deposits held at Sutton Bank.
+            </p>
+            <p>
+              Options trading entails significant risk and is not appropriate for all customers. Customers
+              must read and understand the
+              Characteristics and Risks of Standardized Options
+              before
+              engaging in any options trading strategies. Options transactions are often complex and may
+              involve the potential of losing the entire investment in a relatively short period of time. Certain
+              complex options strategies carry additional risk, including the potential for losses that may
+              exceed the original investment amount.
+            </p>
+            <p className="mt-4">47840659</p>
+            <p>
               Fundora, 85 Willow Road, Menlo Park, CA 94025. © 2025 Fundora.
               All rights reserved.
             </p>
-            </div>
+          </div>
 
           {/* Copyright */}
           {/* <div className="border-t border-black/10 pt-6 text-xs text-gray-700">
