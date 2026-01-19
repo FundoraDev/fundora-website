@@ -1,38 +1,36 @@
 import Link from "next/link";
 import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube, FaXTwitter } from "react-icons/fa6";
+import { GoldBrushSwipe } from "./svg";
 
 export default function Footer() {
   return (
     <footer className="text-black">
       {/* Hero Section */}
-      <div className="relative bg-black text-white py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 overflow-hidden">
-        {/* Blurred Background Effect */}
-        <div className="absolute inset-0">
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
-          {/* Abstract blurred shapes to simulate people silhouettes */}
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gray-700 rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gray-600 rounded-full blur-3xl opacity-25"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gray-800 rounded-full blur-3xl opacity-20"></div>
-          <div className="absolute top-1/2 right-1/3 w-60 h-60 bg-gray-700 rounded-full blur-3xl opacity-25"></div>
-        </div>
+      <div className="relative bg-black text-white py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 overflow-hidden" style={{ backgroundImage: "url('/images/footer-top.png')", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 sm:mb-6">
+        <div
+          className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0 bg-no-repeat bg-top bg-cover"
+
+        >
+          <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-bold mb-0">
             Let&apos;s Build Your Financial Future
           </h1>
 
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <div className="h-px w-8 sm:w-12 bg-yellow-400"></div>
-            <p className="text-lg md:text-xl">
-              <span className="bg-yellow-400 text-black px-2 py-1">
-                The Right Way
+            <div className="h-[3px] md:h-[6px] w-5 sm:w-10 bg-white"></div>
+            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-bold">
+              The{" "}
+              <span className="relative inline-flex items-center justify-center px-2 py-1">
+                <span className="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none select-none">
+                  <GoldBrushSwipe className="w-[210px] sm:w-[260px] md:w-[280px] lg:w-[320px] h-auto max-w-full" />
+                </span>
+                <span className="relative text-black">Right Way</span>
               </span>
-            </p>
+            </h1>
           </div>
 
-          <p className="text-gray-300 text-base md:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-2 sm:px-0">
+          <p className="text-[#AEB1BC] text-[20px] font-light md:text-[24px] mb-6 sm:mb-8 max-w-2xl mx-auto px-2 sm:px-0">
             Whether you&apos;re starting out or refining an existing strategy,
             Fundora helps you move forward with confidence
           </p>
@@ -48,9 +46,9 @@ export default function Footer() {
 
       {/* Top Section with Links and Social Media */}
       <div className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] border-b border-black/10 px-4 sm:px-6 py-3 sm:py-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-sm items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-sm md:text-[16px] items-center">
           {/* Left Links */}
-          <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-gray-700 justify-center md:justify-start items-center">
+          <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-black justify-center md:justify-start items-center">
             <Link
               href="/customer-relationship-summaries"
               className="hover:text-black transition-colors underline text-center md:text-left"
@@ -68,7 +66,7 @@ export default function Footer() {
 
           {/* Social Media */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:justify-start justify-center text-gray-700 text-black">
-            <span className="text-sm mb-1 md:mb-0 md:mr-2">Follow us on</span>
+            <span className="text-sm md:text-[16px] mb-1 md:mb-0 md:mr-2">Follow us on</span>
             <div className="flex items-center gap-2 sm:gap-3">
               <Link
                 href="https://twitter.com"
@@ -77,7 +75,7 @@ export default function Footer() {
                 className="hover:text-black transition-colors"
                 aria-label="X"
               >
-                <FaXTwitter className="h-5 w-5" />
+                <FaXTwitter className="h-5 w-5 text-black" />
               </Link>
               <Link
                 href="https://instagram.com"
@@ -86,7 +84,7 @@ export default function Footer() {
                 className="hover:text-black transition-colors"
                 aria-label="Instagram"
               >
-                <FaInstagram className="h-5 w-5" />
+                <FaInstagram className="h-5 w-5 text-black" />
               </Link>
               <Link
                 href="https://linkedin.com"
@@ -95,7 +93,7 @@ export default function Footer() {
                 className="hover:text-black transition-colors"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin className="h-5 w-5" />
+                <FaLinkedin className="h-5 w-5 text-black" />
               </Link>
               <Link
                 href="https://tiktok.com"
@@ -104,7 +102,7 @@ export default function Footer() {
                 className="hover:text-black transition-colors"
                 aria-label="TikTok"
               >
-                <FaTiktok className="h-5 w-5" />
+                <FaTiktok className="h-5 w-5 text-black" />
               </Link>
               <Link
                 href="https://youtube.com"
@@ -113,7 +111,7 @@ export default function Footer() {
                 className="hover:text-black transition-colors"
                 aria-label="YouTube"
               >
-                <FaYoutube className="h-5 w-5" />
+                <FaYoutube className="h-5 w-5 text-black" />
               </Link>
             </div>
           </div>
@@ -123,7 +121,7 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] px-4 sm:px-6 py-8 sm:py-10 md:py-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-5 mb-8 sm:mb-10 md:mb-12 text-[16px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-5 mb-8 sm:mb-10 md:mb-12 text-sm md:text-[16px]">
             {/* Product Column */}
             <div>
               <h3 className="font-bold mb-3 sm:mb-4">Product</h3>
@@ -272,22 +270,18 @@ export default function Footer() {
           </div>
 
           {/* Legal Disclaimer Text */}
-          <div className="text-[14px] md:text-[15.9px] leading-relaxed space-y-2.5 sm:space-y-3 font-light text-black">
+          <div className="text-sm md:text-[16px] leading-relaxed space-y-2.5 sm:space-y-3 font-light text-black">
             <p className="font-bold">
               All investing involves risk.
             </p>
             <p>
               <span className="font-bold">Brokerage services</span> are offered through Fundora Financial LLC, a registered broker
-              dealer (member
-              SIPC
+              dealer (member <span className="underline">SIPC</span>
               ), and clearing services through Fundora Securities, LLC, a
-              registered broker dealer (member
-              SIPC
+              registered broker dealer (member <span className="underline">SIPC</span>
               ). While there is no additional cost to use Robinhood
-              Legend, there are other fees associated with your brokerage account. Please see the
-              fee
-              schedule
-              for more information.
+              Legend, there are other fees associated with your brokerage account. Please see the <span className="underline">fee
+                schedule</span> for more information.
             </p>
             <p>
               <span className="font-bold">Futures and cleared swaps trading</span> is offered by Fundora Derivatives, LLC, a
@@ -304,9 +298,7 @@ export default function Footer() {
             </p>
             <p>
               Options trading entails significant risk and is not appropriate for all customers. Customers
-              must read and understand the
-              Characteristics and Risks of Standardized Options
-              before
+              must read and understand the <span className="underline">Characteristics and Risks of Standardized Options</span> before
               engaging in any options trading strategies. Options transactions are often complex and may
               involve the potential of losing the entire investment in a relatively short period of time. Certain
               complex options strategies carry additional risk, including the potential for losses that may
