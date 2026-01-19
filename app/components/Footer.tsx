@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -49,9 +48,9 @@ export default function Footer() {
 
       {/* Top Section with Links and Social Media */}
       <div className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] border-b border-black/10 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-sm items-center">
           {/* Left Links */}
-          <div className="flex flex-wrap gap-4 text-gray-700">
+          <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-gray-700 justify-center md:justify-start items-center">
             <Link
               href="/customer-relationship-summaries"
               className="hover:text-black transition-colors"
@@ -67,17 +66,17 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className="flex items-center gap-2 text-gray-700">
-            <span className="text-sm">Follow us on</span>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:justify-start justify-center text-gray-700">
+            <span className="text-sm mb-1 md:mb-0 md:mr-2">Follow us on</span>
             <div className="flex items-center gap-3">
               <Link
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
-                aria-label="X (Twitter)"
+                aria-label="X"
               >
-                <FaTwitter className="h-5 w-5" />
+                <FaXTwitter className="h-5 w-5" />
               </Link>
               <Link
                 href="https://instagram.com"
