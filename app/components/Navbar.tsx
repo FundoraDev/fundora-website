@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { HiOutlineGlobeEuropeAfrica } from "react-icons/hi2";
 
 export default function Navbar() {
@@ -11,11 +11,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("US");
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const languages = [
     { code: "US", label: "English (US)" },
@@ -34,7 +29,7 @@ export default function Navbar() {
   ];
 
   const isActive = (href: string) => {
-    if (!mounted || !pathname) return false;
+    if (!pathname) return false;
     if (href === "/") {
       return pathname === "/";
     }
@@ -223,7 +218,7 @@ export default function Navbar() {
                     active
                       ? {
                           backgroundImage:
-                            "bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%",
+                            "linear-gradient(to right, #C3A346 0%, #FEEF9C 50%, #C7AB4F 100%)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                           backgroundClip: "text",
