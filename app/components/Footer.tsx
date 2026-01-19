@@ -121,7 +121,7 @@ export default function Footer() {
 
       {/* Main Footer Content */}
       <div className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] px-6 py-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Product Column */}
             <div>
@@ -268,9 +268,10 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+          </div>
 
-            {/* Legal Disclaimer Text */}
-            <div className="text-xs leading-relaxed space-y-3">
+          {/* Legal Disclaimer Text */}
+          <div className="text-xs leading-relaxed space-y-3">
               <p>
                 All investing involves risk.
               </p>
@@ -289,16 +290,19 @@ export default function Footer() {
                 for all customers.
               </p>
               <p className="mt-4">47840659</p>
+              <p>
+              Fundora, 85 Willow Road, Menlo Park, CA 94025. © 2025 Fundora.
+              All rights reserved.
+            </p>
             </div>
-          </div>
 
           {/* Copyright */}
-          <div className="border-t border-black/10 pt-6 text-xs text-gray-700">
+          {/* <div className="border-t border-black/10 pt-6 text-xs text-gray-700">
             <p>
               Fundora, 85 Willow Road, Menlo Park, CA 94025. © 2025 Fundora.
               All rights reserved.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 
