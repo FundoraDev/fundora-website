@@ -73,14 +73,14 @@ export default function Home() {
           </h3>
           <div className="w-full mx-auto grid grid-cols-3 justify-between items-center text-[12px] text-white md:text-[24px] font-semibold">
             <div className="flex flex-col items-center justify-center gap-[12px]">
-              <DisciplinedIcon />
+              <DisciplinedIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <p className="text-inherit">Disciplined</p>
             </div>
             <div className="flex flex-col items-center justify-center gap-[12px]">
-              <EthicalIcon />
+              <EthicalIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <p>Ethical</p></div>
             <div className="flex flex-col items-center justify-center gap-[12px]">
-              <FutureFocusedIcon />
+              <FutureFocusedIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <p>Future-focused</p>
             </div>
           </div>
@@ -88,11 +88,11 @@ export default function Home() {
       </section>
 
 
-      {/* Built For People Serious About Wealth */}
+      {/* Built For Africans Serious About Wealth */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-1 text-left text-[24px] leading-7 md:leading-15 font-extrabold md:mb-3 md:text-[56px]">
-            Built For <br /> People Serious <br /> About Wealth
+          <h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
+            Built For <br /> Africans Serious <br /> About Wealth
           </h2>
           <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px] mb-[34px] md:mb-[60px]">Fundora supports:</p>
           <div className="grid gap-4 sm:grid-cols-3">
@@ -100,28 +100,28 @@ export default function Home() {
               {
                 id: "black",
                 body: <p className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent text-[19.32px] md:text-[28px] font-semibold">Professionals building <br /> long-term financial <br /> security</p>,
-                icon: <BuildingHomeIcon />,
+                icon: <BuildingHomeIcon className="w-16 sm:w-20 md:w-28 lg:w-36 h-auto max-w-full" />,
               },
               {
                 id: "gold",
                 body: <p className="text-black text-[19.32px] md:text-[28px] font-semibold">Families planning <br /> for protection and <br /> legacy</p>,
-                icon: <PlanningHomeIcon />,
+                icon: <PlanningHomeIcon className="w-16 sm:w-20 md:w-28 lg:w-36 h-auto max-w-full" />,
               },
               {
                 id: "black",
                 body: <p className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent text-[19.32px] md:text-[28px] font-semibold">Diaspora Africans <br /> navigating cross-border <br /> finances</p>,
-                icon: <NavigatingHomeIcon />,
+                icon: <NavigatingHomeIcon className="w-16 sm:w-20 md:w-28 lg:w-36 h-auto max-w-full" />,
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between item rounded-2xl border border-black/5 ${item.id === "black" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
+                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between rounded-2xl border border-black/5 ${item.id === "black" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
               >
                 {item.icon && item.icon}
                 <div className="space-y-2">
                   {item.body}
                 </div>
-                <button className={`w-auto rounded-[999px] px-4 py-[8px] md:py-[12px] text-[11px] md:text-[16px] font-bold  ${item.id === "gold" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"}`}>Book a Consultation</button>
+                <button className={`w-auto rounded-[999px] px-4 py-[8px] md:py-[12px] text-[11px] md:text-[16px] font-bold ${item.id === "gold" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black text-white" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black"}`}>Book a Consultation</button>
               </div>
             ))}
           </div>
