@@ -89,13 +89,15 @@ export default function Home() {
 
 
       {/* Built For Africans Serious About Wealth */}
+      {/* mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14 */}
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
+        <div className="px-4 py-10 md:px-0 md:py-14">
+          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
             Built For <br /> Africans Serious <br /> About Wealth
           </h2>
-          <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px] mb-[34px] md:mb-[60px]">Fundora supports:</p>
-          <div className="grid gap-4 sm:grid-cols-3">
+            <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px]">Fundora supports:</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-3 md:flex md:gap-[20px] md:overflow-x-auto md:pl-6 lg:mx-auto lg:max-w-7xl">
             {[
               {
                 id: "black",
@@ -115,7 +117,7 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between rounded-2xl border border-black/5 ${item.id === "black" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
+                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between items-start rounded-2xl border border-black/5 ${item.id === "black" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm md:w-[497px] md:flex-shrink-0`}
               >
                 {item.icon && item.icon}
                 <div className="space-y-2">
