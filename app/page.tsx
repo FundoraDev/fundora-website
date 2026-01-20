@@ -4,69 +4,67 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black">
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        .home-hero-bg {
+          background-image: url('/images/home-hero-mb.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        @media (min-width: 768px) {
+          .home-hero-bg {
+            background-image: url('/images/home-hero-dk.png');
+            background-position: right;
+          }
+        }
+      `}} />
       {/* Hero Section */}
-      <section className="bg-black text-white">
+      <section
+        className="home-hero-bg bg-black text-white"
+      >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <p className="inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-[#FEEF9C]">
-              Wealth management, simplified
-            </p>
-            <h1 className="text-[32px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
-              Build, Grow, Protect
+            <h1 className="hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+              Build. Grow. Protect
               <br />
-              Trilateral Wealth
+              Transfer Wealth
               <br />
               With Clarity.
             </h1>
-            <p className="max-w-xl text-sm md:text-base text-gray-200">
-              A dedicated wealth partner designed for people who want to do more than just save.
-              Plan, invest, and protect what matters most with a calm, structured approach.
+            <h1 className="block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+              Build. Grow. Protect
+              <br />
+              Transfer Wealth
+              <br />
+              With Clarity.
+            </h1>
+            <p className="max-w-xl text-[14px] md:text-[24px] font-medium text-gray-200">
+              Fundora is building Africa's next generation <br /> of wealthy families.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="/consultation"
-                className="rounded-[36px] bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
+                className="sm:w-auto text-center w-full rounded-[36px] bg-[#F9FAFC] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
+              >
+                Start Your Wealth Journey
+              </Link>
+              <Link
+                href="/consultation"
+                className="sm:w-auto w-full text-center rounded-[36px] bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
               >
                 Book a Consultation
               </Link>
-              <Link
-                href="/about"
-                className="text-sm font-medium text-gray-200 underline underline-offset-4 hover:text-white"
-              >
-                Learn more
-              </Link>
             </div>
-            <div className="flex flex-wrap gap-6 pt-4 text-xs text-gray-300">
-              <div>
-                <p className="font-semibold text-white">Advisory</p>
-                <p>Goals-based financial planning</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">Investing</p>
-                <p>Managed portfolios &amp; direct access</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">Protection</p>
-                <p>Insurance &amp; risk management</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right image */}
-          <div className="relative flex-1">
-            <div className="relative mx-auto h-[260px] w-full max-w-[360px] overflow-hidden rounded-3xl border border-white/10 bg-zinc-900">
-              <Image
-                src="/images/home-hero-family.jpg"
-                alt="Family discussing finances"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+            <p className="text-center md:text-left max-w-xl text-[11px] md:text-[16px] font-extralight md:font-light text-gray-200">We guide Africans at home and abroad on investing, <br /> protecting their wealth, setting up trust funds, and <br /> creating long-term financial legacies.</p>
           </div>
         </div>
+        <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14 bg-black flex flex-col items-center justify-center flex-wrap gap-6 pt-4 text-xs text-gray-300 text-center">
+          <h3 className="text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-semibold md:text-2xl font-semibold">Helping Africans Everywhere Build Lasting Wealth</h3>
+        </div>
       </section>
+
 
       {/* Built For People Serious About Wealth */}
       <section className="bg-white">
