@@ -99,29 +99,29 @@ export default function Home() {
             {[
               {
                 id: "black",
-                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Professionals building <br /> long-term financial <br /> security</p>,
+                body: <p className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent text-[19.32px] md:text-[28px] font-semibold">Professionals building <br /> long-term financial <br /> security</p>,
                 icon: <BuildingHomeIcon />,
               },
               {
                 id: "gold",
-                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Families planning <br /> for protection and <br /> legacy</p>,
+                body: <p className="text-black text-[19.32px] md:text-[28px] font-semibold">Families planning <br /> for protection and <br /> legacy</p>,
                 icon: <PlanningHomeIcon />,
               },
               {
                 id: "black",
-                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Diaspora Africans <br /> navigating cross-border <br /> finances</p>,
+                body: <p className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent text-[19.32px] md:text-[28px] font-semibold">Diaspora Africans <br /> navigating cross-border <br /> finances</p>,
                 icon: <NavigatingHomeIcon />,
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between rounded-2xl border border-black/5 ${item.id === "black" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
+                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between item rounded-2xl border border-black/5 ${item.id === "black" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
               >
                 {item.icon && item.icon}
                 <div className="space-y-2">
                   {item.body}
                 </div>
-                <button className={`rounded-[999px] px-4 py-8 md:py-[12px] text-[11px] md:text-[16px] font-bold  ${item.id === "gold" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"}`}>Book a Consultation</button>
+                <button className={`w-auto rounded-[999px] px-4 py-[8px] md:py-[12px] text-[11px] md:text-[16px] font-bold  ${item.id === "gold" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"}`}>Book a Consultation</button>
               </div>
             ))}
           </div>
