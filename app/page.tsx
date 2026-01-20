@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BuildingHomeIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, NavigatingHomeIcon, PlanningHomeIcon } from "./components/svg";
 
 export default function Home() {
   return (
@@ -60,8 +61,29 @@ export default function Home() {
             <p className="text-center md:text-left max-w-xl text-[11px] md:text-[16px] font-extralight md:font-light text-gray-200">We guide Africans at home and abroad on investing, <br /> protecting their wealth, setting up trust funds, and <br /> creating long-term financial legacies.</p>
           </div>
         </div>
-        <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14 bg-black flex flex-col items-center justify-center flex-wrap gap-6 pt-4 text-xs text-gray-300 text-center">
-          <h3 className="text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-semibold md:text-2xl font-semibold">Helping Africans Everywhere Build Lasting Wealth</h3>
+        <div className="w-full px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14 bg-black flex flex-col items-center justify-center flex-wrap gap-[48px] pt-4 text-xs text-gray-300 text-center">
+          <h3 className="leading-9 text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-extrabold">
+            Helping Africans Everywhere <br className="block md:hidden" /> Build{" "}
+            <span className="relative inline-flex items-center justify-center px-2 py-1">
+              <span className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none select-none">
+                <GoldBrushSwipe className="w-[210px] sm:w-[260px] md:w-[280px] lg:w-[320px] h-auto max-w-full" />
+              </span>
+              <span className="relative text-black z-15">Lasting Wealth</span>
+            </span>
+          </h3>
+          <div className="w-full mx-auto grid grid-cols-3 justify-between items-center text-[12px] text-white md:text-[24px] font-semibold">
+            <div className="flex flex-col items-center justify-center gap-[12px]">
+              <DisciplinedIcon />
+              <p className="text-inherit">Disciplined</p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-[12px]">
+              <EthicalIcon />
+              <p>Ethical</p></div>
+            <div className="flex flex-col items-center justify-center gap-[12px]">
+              <FutureFocusedIcon />
+              <p>Future-focused</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -69,33 +91,37 @@ export default function Home() {
       {/* Built For People Serious About Wealth */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-6 text-center text-xl font-semibold md:mb-8 md:text-2xl">
-            Built For People Serious About Wealth
+          <h2 className="mb-1 text-left text-[24px] leading-7 md:leading-15 font-extrabold md:mb-3 md:text-[56px]">
+            Built For <br /> People Serious <br /> About Wealth
           </h2>
+          <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px] mb-[34px] md:mb-[60px]">Fundora supports:</p>
           <div className="grid gap-4 sm:grid-cols-3">
             {[
               {
-                title: "Clarity",
-                body: "Understand exactly where you stand today and what it takes to get where you want to go.",
+                id: "black",
+                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Professionals building <br /> long-term financial <br /> security</p>,
+                icon: <BuildingHomeIcon />,
               },
               {
-                title: "Control",
-                body: "Structure your cash flow, savings, and investing so every dollar has a clear purpose.",
+                id: "gold",
+                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Families planning <br /> for protection and <br /> legacy</p>,
+                icon: <PlanningHomeIcon />,
               },
               {
-                title: "Confidence",
-                body: "Move forward with a strategy that adapts as your life and goals evolve.",
+                id: "black",
+                body: <p className="text-gray-200 text-[19.32px] md:text-[28px] font-semibold">Diaspora Africans <br /> navigating cross-border <br /> finances</p>,
+                icon: <NavigatingHomeIcon />,
               },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
-                key={item.title}
-                className="flex flex-col justify-between rounded-2xl border border-black/5 bg-gradient-to-b from-[#111111] via-[#272727] to-black px-5 py-6 text-white shadow-sm"
+                key={i}
+                className={`flex flex-col gap-[32px] md:gap-[90px] justify-between rounded-2xl border border-black/5 ${item.id === "black" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"} px-5 py-6 text-white shadow-sm`}
               >
-                <div className="mb-4 h-10 w-10 rounded-xl bg-gradient-to-br from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]" />
+                {item.icon && item.icon}
                 <div className="space-y-2">
-                  <h3 className="text-base font-semibold">{item.title}</h3>
-                  <p className="text-xs text-gray-200">{item.body}</p>
+                  {item.body}
                 </div>
+                <button className={`rounded-[999px] px-4 py-8 md:py-[12px] text-[11px] md:text-[16px] font-bold  ${item.id === "gold" ? "bg-linear-to-r from-[#111111] via-[#272727] to-black" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F]"}`}>Book a Consultation</button>
               </div>
             ))}
           </div>
