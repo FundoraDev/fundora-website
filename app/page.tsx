@@ -19,6 +19,13 @@ export default function Home() {
             background-position: right;
           }
         }
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
       `}} />
       {/* Hero Section */}
       <section
@@ -97,7 +104,7 @@ export default function Home() {
           </h2>
             <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px]">Fundora supports:</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3 md:flex md:gap-[20px] md:overflow-x-auto md:pl-6 lg:mx-auto lg:max-w-7xl">
+          <div className="grid gap-4 sm:grid-cols-3 md:flex md:gap-[20px] md:overflow-x-auto md:pl-6 lg:mx-auto lg:max-w-7xl hide-scrollbar">
             {[
               {
                 id: "black",
