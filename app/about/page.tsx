@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 
-type Tab = "invest" | "protect" | "advisory";
-
 export default function About() {
 
   return (
