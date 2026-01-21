@@ -131,7 +131,6 @@ export default function Home() {
 
 
       {/* Built For Africans Serious About Wealth */}
-      {/* mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14 */}
       <section className="bg-white">
         <div className="px-4 py-10 md:px-0 md:py-14">
           <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
