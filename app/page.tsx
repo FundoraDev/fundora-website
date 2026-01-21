@@ -309,7 +309,7 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
           {/* Calm Strategy block */}
           <div
-            className="flex flex-col md:justify-center md:items-end gap-8 rounded-3xl bg-black p-6 md:p-8 md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-no-repeat md:bg-left"
+            className="flex flex-col md:justify-center md:items-end gap-8 rounded-3xl bg-black p-6 md:p-8 md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-no-repeat md:bg-left overflow-hidden"
           >
             <div className="md:flex flex-col justify-center items-end w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight font-bold justify-end text-right md:text-[52px] uppercase text-white gap-[16px] md:mb-[50px]">
