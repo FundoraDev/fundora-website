@@ -179,7 +179,7 @@ export default function Home() {
             A Complete Wealth <br /> Framework
           </h2>
 
-          <div className="hidden md:grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
+          <div className="hidden md:grid gap-[100px] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
             {/* Invest */}
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
               <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
@@ -275,7 +275,7 @@ export default function Home() {
                 <button className="w-auto bg-black rounded-[25.69px] px-4 py-2 text-[12px] font-bold py-[8.13px] px-[22px]">
                   <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
                 </button>
-                </>
+              </>
             }
           </div>
         </div>
