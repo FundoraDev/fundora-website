@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { BuildingHomeIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, NavigatingHomeIcon, PlanningHomeIcon } from "./components/svg";
+import { BuildingHomeIcon, ClearThinkingIcon, DisciplinedExecutionIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, LongTermPerspectiveIcon, NavigatingHomeIcon, PlanningHomeIcon, RiskAwarenessIcon } from "./components/svg";
 import React from "react";
 // import { useState } from "react";
 
@@ -38,6 +38,31 @@ export default function Home() {
   ];
 
   const activeItem = completeWealthFramework.find((item) => item.id === activeTab);
+
+  const calmStrategy = [
+    {
+      id: "disciplined-execution",
+      body: <p className="pl-2">Disciplined <br /> execution</p>,
+      icon: <DisciplinedExecutionIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "long-term-perspective",
+      body: <p className="pl-2">Long-term <br /> perspective</p>,
+      icon: <LongTermPerspectiveIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "risk-awareness",
+      body: <p className="pl-2">Risk <br /> awareness</p>,
+      icon: <RiskAwarenessIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "clear-thinking",
+      body: <p className="pl-2">Clear <br /> thinking</p>,
+      icon: <ClearThinkingIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+
+  ];
+
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black">
       <style dangerouslySetInnerHTML={{
@@ -129,7 +154,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Built For Africans Serious About Wealth */}
       <section className="bg-white">
         <div className="px-4 py-10 md:px-0 md:py-14">
@@ -171,7 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* A Dynamic Wealth Framework */}
+      {/* A Complete Wealth Framework */}
       <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
           <h2 className="mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
@@ -281,107 +305,62 @@ export default function Home() {
       </section>
 
       {/* Calm Strategy, Structured Support, Leadership Highlights */}
-      <section className="bg-black text-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16 space-y-10">
+      <section className="bg-white text-black">
+        <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
           {/* Calm Strategy block */}
-          <div className="grid gap-8 rounded-3xl bg-gradient-to-r from-[#111111] via-[#050505] to-black p-6 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:p-8">
-            <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#FEEF9C]">
-                Calm Strategy
-              </p>
-              <h3 className="text-xl font-semibold md:text-2xl">
-                A Partner Focused On Every Side Of Your Wealth
-              </h3>
-              <p className="text-sm text-gray-200">
-                From everyday decisions to multi-decade planning, Fundora brings structure to your
-                investing, protection, and planning—so you can move with confidence instead of noise.
-              </p>
-              <div className="mt-4 grid gap-4 text-xs sm:grid-cols-3">
-                <div>
-                  <p className="font-semibold text-white">Dedicated advisory</p>
-                  <p className="text-gray-300">One-on-one relationships, not call centers.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Institutional research</p>
-                  <p className="text-gray-300">Sophisticated thinking for individual investors.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Holistic perspective</p>
-                  <p className="text-gray-300">Investments, insurance, and cash flow in one view.</p>
-                </div>
+          <div
+            className="flex flex-col md:justify-center md:items-end gap-8 rounded-3xl bg-black p-6 md:p-8 md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-no-repeat md:bg-left"
+          >
+            <div className="md:flex flex-col justify-center items-end w-full space-y-4">
+              <div className="flex flex-col text-[32px] leading-tight font-bold justify-end text-right md:text-[52px] uppercase text-white gap-[16px] md:mb-[50px]">
+                <p className=" tracking-[0.18em] leading-tighter">
+                  Calm Strategy <br /> Beats Loud <br /> Advice
+                </p>
+                <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">We believe wealth is built through:</p>
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="h-[200px] w-[200px] rounded-full bg-gradient-to-b from-[#FEEF9C] via-[#C3A346] to-[#7b5b12]" />
+              <div className="flex md:w-[80%] md:flex-row md:items-start justify-between mt-4  gap-4 text-xs text-white">
+                {calmStrategy.map((strategy) => <div key={strategy.id} className="flex flex-col items-start justify-center gap-[16px] w-[161.35px] h-[131.45px] font-semibold md:text-[26.11px]">
+                  {strategy.icon}
+                  {strategy.body}
+                </div>)}
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Structured Support */}
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="space-y-4 rounded-3xl bg-white p-6 text-black md:p-7">
-              <h3 className="text-lg font-semibold">Structured Support At Every Level</h3>
-              <div className="grid gap-4 text-sm sm:grid-cols-2">
-                <div className="rounded-2xl border border-black/5 bg-[#0b0b0b] p-4 text-white">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#FEEF9C]">
-                    Everyday
-                  </p>
-                  <p className="mt-2 font-semibold">Guided Cash Management</p>
-                  <p className="mt-1 text-xs text-gray-200">
-                    Organize income, bills, and saving so your month has a clear structure.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-black/5 bg-[#0b0b0b] p-4 text-white">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#FEEF9C]">
-                    Advisory
-                  </p>
-                  <p className="mt-2 font-semibold">Private Wealth Advisory</p>
-                  <p className="mt-1 text-xs text-gray-200">
-                    Deeper planning, portfolio design, and coordinated execution.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-black/5 bg-[#0b0b0b] p-4 text-white sm:col-span-2">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#FEEF9C]">
-                    Strategy
-                  </p>
-                  <p className="mt-2 font-semibold">Executive &amp; Business Solutions</p>
-                  <p className="mt-1 text-xs text-gray-200">
-                    Support for equity comp, business owners, and complex balance sheets.
-                  </p>
-                </div>
+      {/* Structured Support */}
+      <section className="bg-[#F5F5F5]">
+        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
+          <h2 className="mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+            Structured Support <br /> At Every Level
+          </h2>
+
+          <div className="grid gap-[100px] grid-cols-2">
+            <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[30px]">
+              <div>
+                <p>FACAP</p>
+                <p>Comprehensive financial planning</p>
               </div>
-              <Link
-                href="/programs"
-                className="inline-flex rounded-[999px] bg-black px-5 py-2 text-xs font-semibold text-white hover:bg-zinc-900 transition"
-              >
-                View Programs
-              </Link>
             </div>
-
-            {/* Leadership highlight */}
-            <div className="rounded-3xl bg-white p-6 text-black md:p-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
-                Leadership Highlight
-              </p>
-              <div className="mt-5 grid gap-6 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-center">
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Meet Your Wealth Partner</h3>
-                  <p className="text-sm text-zinc-700">
-                    Experienced leadership that has guided clients through bull markets, bear markets,
-                    and everything in between—focused on building durable, real-world plans.
-                  </p>
-                  <p className="pt-3 text-sm font-semibold">[Advisor Name]</p>
-                  <p className="text-xs text-zinc-600">
-                    Founder &amp; Lead Wealth Strategist, Fundora
-                  </p>
-                </div>
-                <div className="relative h-[220px] overflow-hidden rounded-3xl bg-zinc-100">
-                  <Image
-                    src="/images/home-leadership.jpg"
-                    alt="Fundora leadership portrait"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+            <div>
+              <div>
+                <p>FACAP</p>
+                <p>Comprehensive financial planning</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid gap-[100px] grid-cols-2">
+            <div>
+              <div>
+                <p>FACAP</p>
+                <p>Comprehensive financial planning</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>FACAP</p>
+                <p>Comprehensive financial planning</p>
               </div>
             </div>
           </div>
