@@ -388,6 +388,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Leadership Highlight */}
+      <section className="bg-white">
+        <div className="px-4 py-10 md:px-0 md:py-14">
+          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
+            Leadership <br /> Highlight
+          </h2>
+            <p className="text-[#808080] text-[16px] leading-6 font-normal md:text-[24px]">Led by experience, integrity, and vision:</p>
+          </div>
+          <div className="grid gap-[29px] grid-cols-1 md:grid-cols-2 md:gap-[10px] lg:gap-[35px] md:pl-6 lg:mx-auto lg:max-w-6xl">
+            {/* Image first on small screens, second on md+ */}
+            <div className="order-1 md:order-2">
+              <Image
+                src="/images/seyi-abiodun.png"
+                alt="Fundora leadership portrait"
+                width={672}
+                height={554}
+                className="w-full h-full object-cover rounded-[80px]"
+              />
+            </div>
+            <div className="flex flex-col md:mx-auto items-start justify-center gap-[24px] md:gap-[60px] md:py-20 order-2 md:order-1">
+              <div>
+                <h3 className="text-[16px] font-bold md:text-[32px] tracking-[12%] mb-1 md:mb-0.5">DR. Seyi Abiodun</h3>
+                <p className="text-[16px] md:text-[20px] text-[#696F8C] font-normal text-[#696F8C]">Founder &amp; Chief Wealth Strategist</p>
+              </div>
+              <p className="hidden md:block text-[24px] font-semibold">Fundora is led by Dr. Seyi Abiodun, <br /> a seasoned financial professional <br /> committed to helping Africans build <br /> and protect wealth responsibly. <br /> You’re guided, not sold to.
+              </p>
+              <p className="block md:hidden text-[16px] font-semibold">Fundora is led by Dr. Seyi Abiodun, a <br /> seasoned financial professionalcommitted <br />  to helping Africans build and protect wealth <br /> responsibly. You’re guided, not sold to.
+              </p>
+              <button className="bg-black text-[12px] rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
+                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Meet Our Leadership</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
