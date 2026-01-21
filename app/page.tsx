@@ -48,7 +48,7 @@ export default function Home() {
               <br />
               With Clarity.
             </h1>
-            <p className="max-w-xl text-[14px] md:text-[24px] font-medium text-gray-200">
+            <p className="max-w-xl text-[14px] md:text-[24px] font-normal text-gray-200">
               Fundora is building Africa's next generation <br /> of wealthy families.
             </p>
             <div className="flex flex-wrap items-center gap-4">
@@ -102,7 +102,7 @@ export default function Home() {
           <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
             Built For <br /> Africans Serious <br /> About Wealth
           </h2>
-            <p className="text-[#808080] text-[16px] leading-6 font-medium md:text-[24px]">Fundora supports:</p>
+            <p className="text-[#808080] text-[16px] leading-6 font-normal md:text-[24px]">Fundora supports:</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-3 md:flex md:gap-[20px] md:overflow-x-auto md:pl-6 lg:mx-auto lg:max-w-7xl hide-scrollbar">
             {[
@@ -138,71 +138,78 @@ export default function Home() {
       </section>
 
       {/* A Dynamic Wealth Framework */}
-      <section className="bg-[#f5f5f5]">
+      <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-8 text-center text-xl font-semibold md:text-2xl">
-            A Dynamic Wealth Framework
+          <h2 className="mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+            A Complete Wealth <br /> Framework
           </h2>
 
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
+          <div className="hidden md:grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
             {/* Invest */}
-            <div className="rounded-3xl bg-white p-6 shadow-sm md:p-7">
-              <div className="mb-4 inline-flex rounded-full bg-black px-3 py-1 text-xs font-semibold text-white">
+            <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
+              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Invest
               </div>
-              <h3 className="mb-3 text-lg font-semibold">Grow What You&apos;ve Built</h3>
-              <p className="mb-5 text-sm text-zinc-700">
-                Sophisticated, yet accessible investing built around risk, time horizon, and what you
-                actually need your money to do.
+              <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Grow your capital through structured, <br /> research-driven investment solutions.
               </p>
-              <button className="rounded-[999px] border border-black px-4 py-2 text-xs font-semibold hover:bg-black hover:text-white transition">
-                Explore Investing
+              <ul className="list-disc text-[24px] tracking-[0%] font-semibold mb-[35px] lg:mb-[48px] ml-[20px]">
+                <li>Mutual Fund</li>
+                <li>Stocks & Fixed Income Instruments</li>
+                <li>Alternative Investments</li>
+              </ul>
+              <button className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
+                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
               </button>
             </div>
             <div className="flex items-center justify-center rounded-3xl bg-black p-6">
-              <div className="relative h-[220px] w-full max-w-[260px] overflow-hidden rounded-3xl bg-gradient-to-b from-emerald-500 to-emerald-900">
-                {/* Placeholder graph; can be replaced with provided image later */}
-              </div>
+              <Image src="/images/invest-home.png" alt="Invest" width={260} height={260} className="w-full h-full object-cover" />
             </div>
 
             {/* Protect */}
-            <div className="order-2 flex items-center justify-center rounded-3xl bg-black p-6 lg:order-1">
-              <div className="relative h-[220px] w-full max-w-[260px] overflow-hidden rounded-3xl bg-gradient-to-b from-emerald-500 to-emerald-900">
-                {/* Placeholder shield / check; hook up SVG later */}
-              </div>
+            <div className="flex items-center justify-center rounded-3xl bg-black p-6">
+              <Image src="/images/protect-home.png" alt="Protect" width={260} height={260} className="w-full h-full object-cover" />
             </div>
-            <div className="order-1 rounded-3xl bg-white p-6 shadow-sm md:p-7 lg:order-2">
-              <div className="mb-4 inline-flex rounded-full bg-black px-3 py-1 text-xs font-semibold text-white">
+            <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
+              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Protect
               </div>
-              <h3 className="mb-3 text-lg font-semibold">Protect What Matters Most</h3>
-              <p className="mb-5 text-sm text-zinc-700">
-                Insurance and risk strategies designed to shield your income, family, and assets from
-                what you can&apos;t predict.
+              <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">
+                Safeguard your income, assets, <br /> and future.
               </p>
-              <button className="rounded-[999px] border border-black px-4 py-2 text-xs font-semibold hover:bg-black hover:text-white transition">
-                Explore Protection
+              <ul className="list-disc text-[24px] tracking-[0%] font-semibold mb-[35px] lg:mb-[48px] ml-[20px]">
+                <li>Life & Health Insurance</li>
+                <li>Income Protection</li>
+                <li>Asset & Business Coverage</li>
+              </ul>
+              <button className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
+                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
               </button>
             </div>
 
-            {/* Accomplish */}
-            <div className="rounded-3xl bg-white p-6 shadow-sm md:p-7">
-              <div className="mb-4 inline-flex rounded-full bg-black px-3 py-1 text-xs font-semibold text-white">
-                Accomplish
+            {/* Advisory */}
+            <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
+              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+                Advisory
               </div>
-              <h3 className="mb-3 text-lg font-semibold">Align Money With Your Life</h3>
-              <p className="mb-5 text-sm text-zinc-700">
-                A planning approach that turns vague goals into clear milestones, with a roadmap and
-                accountability to get there.
+              <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Get personalised guidance for <br /> complex financial decisions.
               </p>
-              <button className="rounded-[999px] border border-black px-4 py-2 text-xs font-semibold hover:bg-black hover:text-white transition">
-                Explore Planning
+              <ul className="list-disc text-[24px] tracking-[0%] font-semibold mb-[35px] lg:mb-[48px] ml-[20px]">
+                <li>Financial Consultation</li>
+                <li>Private Wealth Advisory</li>
+                <li>Business & Strategy Support</li>
+              </ul>
+              <button className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
+                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
               </button>
             </div>
             <div className="flex items-center justify-center rounded-3xl bg-black p-6">
-              <div className="relative h-[220px] w-full max-w-[260px] overflow-hidden rounded-3xl bg-gradient-to-b from-emerald-500 to-emerald-900">
-                {/* Placeholder hands / partnership image to be wired later */}
-              </div>
+              <Image
+                src="/images/advisory-home.png"
+                alt="Advisory"
+                width={260}
+                height={260}
+                className="w-full h-full object-cover relative z-10"
+              />
             </div>
           </div>
         </div>
