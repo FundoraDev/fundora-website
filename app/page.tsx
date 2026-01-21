@@ -309,16 +309,16 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
           {/* Calm Strategy block */}
           <div
-            className="flex flex-col md:justify-center md:items-end gap-8 rounded-3xl bg-black p-6 md:p-8 md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-no-repeat md:bg-left overflow-hidden"
+            className="flex flex-col md:justify-center md:items-end gap-8 rounded-3xl bg-black p-6 md:p-8 bg-[url('/images/calm-strategy-mobile.png')] md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-size-[300px] bg-no-repeat bg-[right_bottom] md:bg-left overflow-hidden"
           >
-            <div className="md:flex flex-col justify-center items-end w-full space-y-4">
-              <div className="flex flex-col text-[32px] leading-tight font-bold justify-end text-right md:text-[52px] uppercase text-white gap-[16px] md:mb-[50px]">
+            <div className="md:flex flex-col justify-center items-start md:items-end w-full space-y-4">
+              <div className="flex flex-col text-[32px] leading-tight font-bold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
                 <p className=" tracking-[0.18em] leading-tighter">
                   Calm Strategy <br /> Beats Loud <br /> Advice
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">We believe wealth is built through:</p>
               </div>
-              <div className="flex md:w-[80%] md:flex-row md:items-start justify-between mt-4  gap-4 text-xs text-white">
+              <div className="flex md:w-[80%] flex-col md:flex-row md:items-start justify-between mt-4  gap-4 text-xs text-white">
                 {calmStrategy.map((strategy) => <div key={strategy.id} className="flex flex-col items-start justify-center gap-[16px] w-[161.35px] h-[131.45px] font-semibold md:text-[26.11px]">
                   {strategy.icon}
                   {strategy.body}
