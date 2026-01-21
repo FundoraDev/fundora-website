@@ -1,8 +1,43 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { BuildingHomeIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, NavigatingHomeIcon, PlanningHomeIcon } from "./components/svg";
+import React from "react";
+// import { useState } from "react";
+
+type Tab = "invest" | "protect" | "advisory";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = React.useState<Tab>("invest");
+  const handleTabClick = (tab: Tab) => {
+    setActiveTab(tab);
+  };
+
+  const completeWealthFramework = [
+    {
+      id: "invest",
+      title: "Invest",
+      description: "Grow your capital through structured, research-driven investment solutions.",
+      list: ["Mutual Fund", "Stocks & Fixed Income Instruments", "Alternative Investments"],
+      path: "/images/invest-home.png",
+    },
+    {
+      id: "protect",
+      title: "Protect",
+      description: "Safeguard your income, assets, and future.",
+      list: ["Life & Health Insurance", "Income Protection", "Asset & Business Coverage"],
+      path: "/images/protect-home.png",
+    },
+    {
+      id: "advisory",
+      title: "Advisory",
+      description: "Get personalised guidance for complex financial decisions.",
+      list: ["Financial Consultation", "Private Wealth Advisory", "Business & Strategy Support"],
+      path: "/images/advisory-home.png",
+    },
+  ];
+
+  const activeItem = completeWealthFramework.find((item) => item.id === activeTab);
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black">
       <style dangerouslySetInnerHTML={{
@@ -161,13 +196,17 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
               </button>
             </div>
-            <div className="flex items-center justify-center rounded-3xl bg-black p-6">
-              <Image src="/images/invest-home.png" alt="Invest" width={260} height={260} className="w-full h-full object-cover" />
+            <div className="flex items-center justify-center rounded-3xl 
+            bg-black p-6">
+              <Image src="/images/invest-home.png" alt="Invest" width={260}
+                height={260} className="w-full h-full object-cover" />
             </div>
 
             {/* Protect */}
-            <div className="flex items-center justify-center rounded-3xl bg-black p-6">
-              <Image src="/images/protect-home.png" alt="Protect" width={260} height={260} className="w-full h-full object-cover" />
+            <div className="flex items-center justify-center rounded-3xl 
+            bg-black p-6">
+              <Image src="/images/protect-home.png" alt="Protect" width={260}
+                height={260} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
               <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
@@ -186,7 +225,6 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Advisory */}
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
               <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Advisory
@@ -202,15 +240,43 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
               </button>
             </div>
-            <div className="flex items-center justify-center rounded-3xl bg-black p-6">
+            <div className="relative rounded-3xl bg-black overflow-hidden">
+              <div
+                className="z-20 pointer-events-none absolute inset-x-0 top-0 h-1/3 opacity-70 blur-2xl bg-[radial-gradient(circle_at_top,_#00DB0E_0%,_rgba(0,219,14,0)_70%)]"
+              />
               <Image
                 src="/images/advisory-home.png"
                 alt="Advisory"
                 width={260}
                 height={260}
-                className="w-full h-full object-cover relative z-10"
+                className="object-cover w-full h-full"
               />
             </div>
+          </div>
+          <div className="flex flex-col justify-center align-center gap-[24px] md:hidden">
+            <div className="grid grid-cols-3 border-[0.5px] border-[#E5E5E5] rounded-3xl p-[4px] text-[12px]">
+              {completeWealthFramework.map((item) => (
+                <button key={item.id} onClick={() => handleTabClick(item.id as Tab)} className={`w-full h-full rounded-[22.45px] ${activeTab === item.id ? "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black font-semibold" : "bg-transparent text-black"} py-[11px]`}>
+                  {item.title}
+                </button>
+              ))}
+            </div>
+            {
+              <>
+                <div className="flex flex-col items-start justify-center rounded-3xl bg-black p-0 overflow-hidden">
+                  <Image src={activeItem?.path || ""} alt={activeItem?.title || ""} width={300} height={300} className="w-full h-full object-cover" />
+                </div>
+                <p className="text-[14px] font-normal text-[#696F8C]">{activeItem?.description || ""}</p>
+                <ul className="list-disc text-[16px] tracking-[0%] font-semibold ml-[20px]">
+                  {activeItem?.list?.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <button className="w-auto bg-black rounded-[25.69px] px-4 py-2 text-[12px] font-bold py-[8.13px] px-[22px]">
+                  <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
+                </button>
+                </>
+            }
           </div>
         </div>
       </section>
