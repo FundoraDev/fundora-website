@@ -1,5 +1,11 @@
 "use client";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fundora - Programs",
+  description: "Explore our programs and find the perfect one for you.",
+};
 
 export default function Programs() {
 

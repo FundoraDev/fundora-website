@@ -1,5 +1,11 @@
 "use client";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fundora - Invest",
+  description: "Invest your wealth with Fundora.",
+};
 
 export default function Invest() {
 
