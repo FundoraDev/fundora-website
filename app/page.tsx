@@ -42,22 +42,22 @@ export default function Home() {
   const calmStrategy = [
     {
       id: "disciplined-execution",
-      body: <p className="pl-2">Disciplined <br /> execution</p>,
+      body: <p className="md:pl-2">Disciplined <br /> execution</p>,
       icon: <DisciplinedExecutionIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "long-term-perspective",
-      body: <p className="pl-2">Long-term <br /> perspective</p>,
+      body: <p className="md:pl-2">Long-term <br /> perspective</p>,
       icon: <LongTermPerspectiveIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "risk-awareness",
-      body: <p className="pl-2">Risk <br /> awareness</p>,
+      body: <p className="md:pl-2">Risk <br /> awareness</p>,
       icon: <RiskAwarenessIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "clear-thinking",
-      body: <p className="pl-2">Clear <br /> thinking</p>,
+      body: <p className="md:pl-2">Clear <br /> thinking</p>,
       icon: <ClearThinkingIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
 
