@@ -3,12 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BuildingHomeIcon, ClearThinkingIcon, DisciplinedExecutionIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, LongTermPerspectiveIcon, NavigatingHomeIcon, PlanningHomeIcon, RiskAwarenessIcon } from "./components/svg";
 import React from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Fundora - Home",
-  description: "Build. Grow. Protect. Transfer Wealth With Clarity.",
-};
 
 type Tab = "invest" | "protect" | "advisory";
 
