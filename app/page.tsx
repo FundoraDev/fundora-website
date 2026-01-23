@@ -337,7 +337,7 @@ export default function Home() {
 
           <div className="flex flex-row justify-center items-center gap-[10px] md:gap-[24px] mb-[32px] md:mb-[48px]">
             <div className="flex flex-col justify-center items-center gap-[10px] md:gap-[24px]">
-              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px]">
+              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px] md:w-[533px] md:h-[439px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeFacapIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
                   <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">FACAP</p>
@@ -345,7 +345,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px]">
+              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px] md:w-[533px] md:h-[506px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeConsultancyIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
                   <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Consultations </p>
@@ -355,7 +355,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col justify-center items-center gap-[10px] md:gap-[24px]">
-              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px]">
+              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomePWAIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
                   <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Private Wealth Advisory</p>
@@ -363,7 +363,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px]">
+              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeBusinessConsultationIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
                   <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Business Consulting</p>
