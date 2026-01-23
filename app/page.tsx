@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { BuildingHomeIcon, ClearThinkingIcon, DisciplinedExecutionIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, LongTermPerspectiveIcon, NavigatingHomeIcon, PlanningHomeIcon, RiskAwarenessIcon } from "./components/svg";
+import { BuildingHomeIcon, ClearThinkingIcon, DisciplinedExecutionIcon, DisciplinedIcon, EthicalIcon, FutureFocusedIcon, GoldBrushSwipe, HomeFacapIcon, LongTermPerspectiveIcon, NavigatingHomeIcon, PlanningHomeIcon, RiskAwarenessIcon, HomePWAIcon, HomeConsultancyIcon, HomeBusinessConsultationIcon } from "./components/svg";
 import React from "react";
 
 type Tab = "invest" | "protect" | "advisory";
@@ -259,7 +259,7 @@ export default function Home() {
                 <li>Business & Strategy Support</li>
               </ul>
               <button className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
-                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
+                <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Speak With an Advisor</span>
               </button>
             </div>
             <div className="relative rounded-3xl bg-black overflow-hidden">
@@ -335,33 +335,48 @@ export default function Home() {
             Structured Support <br /> At Every Level
           </h2>
 
-          <div className="grid gap-[100px] grid-cols-2">
-            <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[30px]">
-              <div>
-                <p>FACAP</p>
-                <p>Comprehensive financial planning</p>
+          <div className="flex flex-row justify-center items-center gap-[10px] md:gap-[24px] mb-[32px] md:mb-[48px]">
+            <div className="flex flex-col justify-center items-center gap-[10px] md:gap-[24px]">
+              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px]">
+                <HomeFacapIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+                <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
+                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">FACAP</p>
+                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Comprehensive financial planning</p>
+                </div>
+              </div>
+
+              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px]">
+                <HomeConsultancyIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+                <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
+                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Consultations </p>
+                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Focused clarity for key decisions</p>
+                </div>
               </div>
             </div>
-            <div>
-              <div>
-                <p>FACAP</p>
-                <p>Comprehensive financial planning</p>
+
+            <div className="flex flex-col justify-center items-center gap-[10px] md:gap-[24px]">
+              <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px]">
+                <HomePWAIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+                <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
+                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Private Wealth Advisory</p>
+                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Bespoke strategy for high-net-<br className="hidden md:block"/>worth clients</p>
+                </div>
+              </div>
+
+              <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px]">
+                <HomeBusinessConsultationIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+                <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
+                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Business Consulting</p>
+                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Financial structure for growth</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="grid gap-[100px] grid-cols-2">
-            <div>
-              <div>
-                <p>FACAP</p>
-                <p>Comprehensive financial planning</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <p>FACAP</p>
-                <p>Comprehensive financial planning</p>
-              </div>
-            </div>
+
+          <div className="w-full flex flex-col items-start md:items-center justify-center">
+            <button className="bg-black rounded-[36px] font-bold py-[8.13px] md:py-[12px] px-[22.83px] md:px-[32px] text-[12px] md:text-[16px]">
+              <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Speak With an Advisor</span>
+            </button>
           </div>
         </div>
       </section>
