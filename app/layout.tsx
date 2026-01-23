@@ -106,7 +106,9 @@ export default function RootLayout({
         className={`${aileron.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <div className="pt-[68px]">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

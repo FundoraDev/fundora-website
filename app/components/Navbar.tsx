@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-[#000000] h-[68px] text-white px-4 md:px-6 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#000000] h-[68px] text-white px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image alt="Fundora Logo" src="/fundora.png" width={30} height={30} />
