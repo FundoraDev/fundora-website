@@ -359,7 +359,7 @@ export default function Home() {
                 <HomePWAIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
                   <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Private Wealth Advisory</p>
-                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Bespoke strategy for high-net-<br className="hidden md:block"/>worth clients</p>
+                  <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Bespoke strategy for high-net-<br className="hidden md:block" />worth clients</p>
                 </div>
               </div>
 
