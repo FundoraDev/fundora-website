@@ -105,10 +105,10 @@ export default function About() {
           <h2 className="text-black font-bold text-[16px] md:text-[28px] uppercase">Our Mission</h2>
           {/* Africa's next generation */}
           <div
-            className="flex flex-col md:justify-center md:items-start gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden"
+            className="flex flex-col md:justify-center md:items-start gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden bg-[url('/images/our-mission-africa-mb.png')] bg-cover bg-no-repeat bg-size-[190px] bg-[right_60%]"
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
-              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-start w-full md:w-auto md:justify-start text-left md:text-left md:text-[52px] text-white gap-[16px] md:mb-[50px]">
+              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-start w-full md:w-auto md:justify-start text-left md:text-left md:text-[52px] text-white gap-[16px] mb-[50px]">
                 <p className="leading-tighter">
                   To create Africa’s <br className="md:hidden block" /> next <br className="hidden md:block" /> generation <br className="md:hidden block" /> of wealthy <br className="md:hidden block" /> <br className="hidden md:block" /> families.
                 </p>
