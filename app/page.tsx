@@ -311,8 +311,8 @@ export default function Home() {
             className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 bg-[url('/images/calm-strategy-mobile.png')] md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-size-[300px] bg-no-repeat bg-[right_bottom] md:bg-left overflow-hidden"
           >
             <div className="md:flex flex-col justify-center items-start md:items-end w-full space-y-4">
-              <div className="flex flex-col text-[32px] leading-tight font-bold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
-                <p className=" tracking-[0.18em] leading-tighter">
+              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
+                <p className="leading-tighter">
                   Calm Strategy <br /> Beats Loud <br /> Advice
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">We believe wealth is built through:</p>

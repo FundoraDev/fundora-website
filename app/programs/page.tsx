@@ -269,8 +269,8 @@ export default function Programs() {
             className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden"
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
-              <div className="flex flex-col text-[32px] leading-tight font-bold justify-center items-center w-full md:w-auto md:justify-start text-center md:text-left md:text-[52px] text-white gap-[16px] md:mb-[50px]">
-                <p className=" tracking-[0.18em] leading-tighter">
+              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-center md:items-start w-full md:w-auto md:justify-start text-center md:text-left md:text-[52px] text-white gap-[16px] md:mb-[50px]">
+                <p className="leading-tighter">
                   Start with <br className="hidden md:block" /> clarity
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">If you’re unsure where to begin:</p>
