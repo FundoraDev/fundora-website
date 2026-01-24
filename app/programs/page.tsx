@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { Facap2Icon, UnderstandHowToInvest } from "../components/svg";
 
 export const metadata: Metadata = {
   title: "Fundora - Programs",
@@ -31,6 +32,17 @@ export default function Programs() {
         }
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+        .facap2-bg {
+          background-image: url('/images/facap2-mb.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        @media (min-width: 768px) {
+          .facap2-bg {
+            background-image: url('/images/facap2.png');
+          }
         }
       `}} />
       {/* Hero Section */}
@@ -88,6 +100,32 @@ export default function Programs() {
             </div>
             <div className="order-1 md:order-none">
               <Image alt="FACAP" src="/images/facap.png" width={639} height={423} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FACAP is Ideal Section */}
+      <section
+        className="bg-white text-black"
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 pb-16 pt-10 md:flex-col items-start justify-center md:gap-[60px] md:px-6 lg:pb-20 lg:pt-14">
+          <h2 className="text-[24px] md:text-[56px] font-bold mb-[12px] md:mb-[19px] leading-tight">FACAP is Ideal if <br className="hidden md:block" /> You Want:</h2>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 rounded-[16.37px] md:rounded-[60px] py-[27px] px-[16px] md:py-[90px] md:px-[80px] facap2-bg">
+            <div className="flex flex-col items-start justify-center gap-[12px] md:gap-[48px] text-white">
+              <div className="flex flex-row justify-center items-center gap-[14px] font-bold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
+                <Facap2Icon className="w-12 h-12" />
+                <p>
+                  Clear understanding of <br /> financial planning
+                </p>
+              </div>
+              <div className="flex flex-row justify-center items-center gap-[14px] font-bold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
+                <UnderstandHowToInvest className="w-12 h-12" />
+                <p>
+                  Understand how to invest in <br /> stocks and fixed income <br /> instruments as a beginner
+                </p>
+              </div>
+              <button className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black rounded-[36px] px-4 py-2 text-[11px] md:text-[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">Register for next cohort of FACAP</button>
             </div>
           </div>
         </div>

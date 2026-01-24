@@ -115,7 +115,7 @@ export default function Invest() {
                     <p className="text-[12px] md:text-[24px] font-normal break-words">{stock.description}</p>
                   </div>
                 </div>
-                <button className="bg-black rounded-[36px] px-4 py-2 text-[11px] md:[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">
+                <button className="bg-black rounded-[36px] px-4 py-2 text-[11px] md:text-[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">
                   <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Explore Investing</span>
                 </button>
               </div>
