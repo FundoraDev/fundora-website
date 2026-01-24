@@ -111,8 +111,8 @@ export default function Programs() {
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 pb-16 pt-10 md:flex-col items-start justify-center md:gap-[60px] md:px-6 lg:pb-20 lg:pt-14">
           <h2 className="text-[24px] md:text-[56px] font-bold mb-[12px] md:mb-[19px] leading-tight">FACAP is Ideal if <br className="hidden md:block" /> You Want:</h2>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 rounded-[16.37px] md:rounded-[60px] py-[27px] px-[16px] md:py-[90px] md:px-[80px] facap2-bg">
-            <div className="flex flex-col items-start justify-center gap-[12px] md:gap-[48px] text-white">
+          <div className="w-[343px] h-[418px] md:w-full md:h-auto mx-auto md:mx-0 grid grid-cols-1 md:grid-cols-2 rounded-[16.37px] md:rounded-[60px] py-[27px] px-[16px] md:py-[90px] md:px-[80px] facap2-bg">
+            <div className="flex flex-col items-start justify-end md:justify-center gap-[12px] md:gap-[48px] text-white">
               <div className="flex flex-row justify-center items-center gap-[14px] font-bold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
                 <Facap2Icon className="w-12 h-12" />
                 <p>
