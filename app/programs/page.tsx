@@ -13,23 +13,23 @@ export default function Programs() {
   const howToChoose = [
     {
       id: "choose-consultation",
-      body: <p className="md:pl-2">Choose <br className="hidden md:block" /> Consultation for <br className="hidden md:block" /> immediate clarity</p>,
+      body: <p>Choose <br className="hidden md:block" /> Consultation for <br className="hidden md:block" /> immediate clarity</p>,
       icon: <ChooseConsultationIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "choose-facap",
-      body: <p className="md:pl-2">Choose <span className="font-bold">FACAP</span> for full <br className="hidden md:block" /> personal financial <br className="hidden md:block" /> structure</p>,
+      body: <p>Choose <span className="font-bold">FACAP</span> for full <br className="hidden md:block" /> personal financial <br className="hidden md:block" /> structure</p>,
       icon: <ChooseFACAPIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "choose-private-wealth",
-      body: <p className="md:pl-2">Choose <span className="font-bold">Private Wealth <br className="hidden md:block" /> Advisory</span> for bespoke, <br className="hidden md:block" /> long-term guidance</p>,
+      body: <p>Choose <span className="font-bold">Private Wealth <br className="hidden md:block" /> Advisory</span> for bespoke, <br className="hidden md:block" /> long-term guidance</p>,
       icon: <ChoosePWAIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
     },
     {
       id: "business",
-      body: <p className="md:pl-2">Choose <span className="font-bold">Business <br className="hidden md:block" />  Consulting</span> for enterprise-<br className="hidden md:block" /> focused support</p>,
-      icon: <BusinessIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+      body: <p>Choose <span className="font-bold">Business <br className="hidden md:block" />  Consulting</span> for enterprise-<br className="hidden md:block" /> focused support</p>,
+      icon: <BusinessIcon className="w-20 h-10 sm:w-20 sm:h-10 md:w-20 md:h-10 lg:w-20 lg:h-10" />
     },
 
   ];
@@ -169,11 +169,16 @@ export default function Programs() {
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">If you’re unsure where to begin:</p>
               </div>
-              <div className="flex w-full flex-col md:flex-row items-center md:items-start justify-between mt-4  gap-4 text-xs text-white">
-                {howToChoose.map((strategy) => <div key={strategy.id} className="flex flex-col items-center text-center md:text-left md:items-start justify-center gap-[16px] w-[161.35px] h-[131.45px] font-semibold text-[14px] md:text-[24px]">
-                  {strategy.icon}
-                  {strategy.body}
-                </div>)}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-full mt-4 gap-4 md:gap-6 lg:gap-8 text-xs text-white">
+                {howToChoose.map((strategy) => (
+                  <div
+                    key={strategy.id}
+                    className="flex flex-col items-center text-center md:items-start md:text-left justify-center gap-3 md:gap-4 min-h-[131px] md:min-h-0 font-semibold text-[14px] md:text-[20px] lg:text-[24px]"
+                  >
+                    {strategy.icon}
+                    {strategy.body}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
