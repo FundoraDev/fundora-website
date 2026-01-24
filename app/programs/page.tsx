@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
-import { Facap2Icon, UnderstandHowToInvest } from "../components/svg";
+import { BusinessIcon, ChooseConsultationIcon, ChooseFACAPIcon, ChoosePWAIcon, Facap2Icon, UnderstandHowToInvest } from "../components/svg";
 
 export const metadata: Metadata = {
   title: "Fundora - Programs",
@@ -9,6 +9,30 @@ export const metadata: Metadata = {
 };
 
 export default function Programs() {
+
+  const howToChoose = [
+    {
+      id: "choose-consultation",
+      body: <p className="md:pl-2">Choose <br className="hidden md:block" /> Consultation for <br className="hidden md:block" /> immediate clarity</p>,
+      icon: <ChooseConsultationIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "choose-facap",
+      body: <p className="md:pl-2">Choose <span className="font-bold">FACAP</span> for full <br className="hidden md:block" /> personal financial <br className="hidden md:block" /> structure</p>,
+      icon: <ChooseFACAPIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "choose-private-wealth",
+      body: <p className="md:pl-2">Choose <span className="font-bold">Private Wealth <br className="hidden md:block" /> Advisory</span> for bespoke, <br className="hidden md:block" /> long-term guidance</p>,
+      icon: <ChoosePWAIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+    {
+      id: "business",
+      body: <p className="md:pl-2">Choose <span className="font-bold">Business <br className="hidden md:block" />  Consulting</span> for enterprise-<br className="hidden md:block" /> focused support</p>,
+      icon: <BusinessIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
+    },
+
+  ];
 
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black">
@@ -126,6 +150,31 @@ export default function Programs() {
                 </p>
               </div>
               <button className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black rounded-[36px] px-4 py-2 text-[11px] md:text-[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">Register for next cohort of FACAP</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How To Choose */}
+      <section className="bg-white text-black">
+        <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
+          {/* Calm Strategy block */}
+          <div
+            className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden"
+          >
+            <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
+              <div className="flex flex-col text-[32px] leading-tight font-bold justify-center items-center w-full md:w-auto md:justify-start text-center md:text-left md:text-[52px] text-white gap-[16px] md:mb-[50px]">
+                <p className=" tracking-[0.18em] leading-tighter">
+                  Start with <br className="hidden md:block" /> clarity
+                </p>
+                <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">If you’re unsure where to begin:</p>
+              </div>
+              <div className="flex w-full flex-col md:flex-row items-center md:items-start justify-between mt-4  gap-4 text-xs text-white">
+                {howToChoose.map((strategy) => <div key={strategy.id} className="flex flex-col items-center text-center md:text-left md:items-start justify-center gap-[16px] w-[161.35px] h-[131.45px] font-semibold text-[14px] md:text-[24px]">
+                  {strategy.icon}
+                  {strategy.body}
+                </div>)}
+              </div>
             </div>
           </div>
         </div>
