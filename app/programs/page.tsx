@@ -157,7 +157,8 @@ export default function Programs() {
 
       {/* How To Choose */}
       <section className="bg-white text-black">
-        <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
+        <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10 text-center">
+          <h2 className="text-black font-bold text-[16px] md:text-[28px]">HOW TO CHOOSE THE RIGHT <br className="block md:hidden" /> PROGRAM</h2>
           {/* Calm Strategy block */}
           <div
             className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden"
