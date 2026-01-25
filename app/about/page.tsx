@@ -30,16 +30,19 @@ export default function About() {
 
   const ourPhilosophy = [
     {
-      icon: <WealthIsBuiltIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
-      text: <p>Wealth is built intentionally, <br /> not accidentally</p>
+      id: "wealth-is-built",
+      icon: <WealthIsBuiltIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />,
+      text: <p className="font-semibold text-[18px] md:text-[24px]">Wealth is built intentionally, <br /> not accidentally</p>
     },
     {
-      icon: <GoodAdviceIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
-      text: <p>Good advice should reduce anxiety,<br /> not increase it</p>
+      id: "good-advice",
+      icon: <GoodAdviceIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />,
+      text: <p className="font-semibold text-[18px] md:text-[24px]">Good advice should reduce anxiety,<br /> not increase it</p>
     },
     {
-      icon: <LongTermIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
-      text: <p>Long-term thinking always <br /> outperforms quick wins</p>
+      id: "long-term",
+      icon: <LongTermIcon className="w-10 h-10 sm:w-10 sm:h-15 md:w-15 md:h-10 lg:w-20 lg:h-20" />,
+      text: <p className="font-semibold text-[18px] md:text-[24px]">Long-term thinking always <br /> outperforms quick wins</p>
     },
   ]
 
@@ -134,8 +137,15 @@ export default function About() {
               <Image alt="FACAP" src="/images/our-philosophy-vault.png" width={345} height={321} />
             </div>
           </div>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
-
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-[20px] md:gap-[20px]">
+            {
+              ourPhilosophy.map((philosophy) => (
+                <div key={philosophy.id} className="flex flex-col items-start justify-center gap-[22px]">
+                  {philosophy.icon}
+                  {philosophy.text}
+                </div>
+              ))
+            }
           </div>
         </div>
       </section>
