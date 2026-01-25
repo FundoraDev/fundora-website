@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChoosePWAIcon, LongTermPerspectiveIcon, MultiGenerationalIcon, WorldClassIcon } from "../components/svg";
+import { ChoosePWAIcon, GoldBrushSwipe2, LongTermPerspectiveIcon, MultiGenerationalIcon, WorldClassIcon } from "../components/svg";
 
 export default function About() {
 
@@ -170,7 +170,14 @@ export default function About() {
           </div>
           <div className="w-full flex flex-row items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
             <h4 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-bold mb-[12px] text-center md:mb-[16px] capitalize">
-              To become the trusted <br className="hidden md:block" /> wealth partner behind <br className="hidden md:block" /> Africa’s first million-dollar, <br className="hidden md:block" /> globally connected, <br className="hidden md:block" /> financially independent <br className="hidden md:block" /> families
+              To become the trusted <br className="hidden md:block" />{" "}
+              <span className="relative z-10 isolate inline-flex items-center justify-center px-4 py-1">
+                <span className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none">
+                  <GoldBrushSwipe2 className="w-[220px] sm:w-[280px] md:w-[340px] lg:w-[400px] h-auto max-w-full" />
+                </span>
+                <span className="relative z-10 text-black">wealth partner</span>
+              </span>{" "}
+              behind <br className="hidden md:block" /> Africa’s first million-dollar, <br className="hidden md:block" /> globally connected, <br className="hidden md:block" /> financially independent <br className="hidden md:block" /> families
             </h4>
           </div>
         </div>
