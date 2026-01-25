@@ -58,14 +58,14 @@ export default function About() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Fundora Is Building
               <br />
               Africa's Next Generation
               <br />
               Of Wealthy Families.
             </h1>
-            <h1 className="block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Fundora Is
               <br />
               Building Africa's
@@ -109,7 +109,7 @@ export default function About() {
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-start w-full md:w-auto md:justify-start text-left md:text-left md:text-[52px] text-white gap-[16px] mb-[50px]">
-                <p className="leading-tighter">
+                <p className="font-satoshi leading-tighter">
                   To create Africa’s <br className="md:hidden block" /> next <br className="hidden md:block" /> generation <br className="md:hidden block" /> of wealthy <br className="md:hidden block" /> <br className="hidden md:block" /> families.
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">
