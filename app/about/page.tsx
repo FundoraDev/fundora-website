@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChoosePWAIcon, GoldBrushSwipe2, LongTermPerspectiveIcon, MultiGenerationalIcon, WorldClassIcon } from "../components/svg";
+import { ChoosePWAIcon, GoldBrushSwipe2, GoodAdviceIcon, LongTermIcon, LongTermPerspectiveIcon, MultiGenerationalIcon, WealthIsBuiltIcon, WorldClassIcon } from "../components/svg";
 
 export default function About() {
 
@@ -27,6 +27,21 @@ export default function About() {
     },
 
   ];
+
+  const ourPhilosophy = [
+    {
+      icon: <WealthIsBuiltIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
+      text: <p>Wealth is built intentionally, <br /> not accidentally</p>
+    },
+    {
+      icon: <GoodAdviceIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
+      text: <p>Good advice should reduce anxiety,<br /> not increase it</p>
+    },
+    {
+      icon: <LongTermIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />,
+      text: <p>Long-term thinking always <br /> outperforms quick wins</p>
+    },
+  ]
 
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black">
@@ -100,7 +115,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* FACAP Section */}
+      {/* Our Philosophy */}
       <section
         className="bg-[#F5F5F5] text-black"
       >
