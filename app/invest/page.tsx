@@ -57,12 +57,12 @@ export default function Invest() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Invest With Clarity,
               <br />
               Not Guesswork
             </h1>
-            <h1 className="block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Invest With
               <br />
               Clarity, Not
@@ -101,7 +101,7 @@ export default function Invest() {
         className="bg-white text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
-          <h2 className="text-[16px] md:text-[28px] tracking-[12%] lg:text-[48px] font-bold leading-7 md:leading-12 text-center">STOCKS & MARKET INVESTMENTS</h2>
+          <h2 className="font-satoshi text-[16px] md:text-[28px] tracking-[12%] lg:text-[48px] font-bold leading-7 md:leading-12 text-center">STOCKS & MARKET INVESTMENTS</h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-[10px] md:gap-[24px]">
             {stocks.map((stock) => (
               <div
