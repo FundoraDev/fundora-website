@@ -93,14 +93,14 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Build. Grow. Protect
               <br />
               Transfer Wealth
               <br />
               With Clarity.
             </h1>
-            <h1 className="block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
               Build. Grow. Protect
               <br />
               Transfer Wealth
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14 bg-black flex flex-col items-center justify-center flex-wrap gap-[48px] pt-4 text-xs text-gray-300 text-center">
-          <h3 className="leading-9 text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-extrabold">
+          <h3 className="font-satoshi leading-9 text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-extrabold">
             Helping Africans Everywhere <br className="block md:hidden" /> Build{" "}
             <span className="relative inline-flex items-center justify-center px-2 py-1">
               <span className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none select-none">
@@ -156,7 +156,7 @@ export default function Home() {
       {/* Built For Africans Serious About Wealth */}
       <section className="bg-white">
         <div className="px-4 py-10 md:px-0 md:py-14">
-          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
+          <div className="font-satoshi mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
             Built For <br /> Africans Serious <br /> About Wealth
           </h2>
             <p className="text-[#808080] text-[16px] leading-6 font-normal md:text-[24px]">Fundora supports:</p>
@@ -197,14 +197,14 @@ export default function Home() {
       {/* A Complete Wealth Framework */}
       <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
             A Complete Wealth <br /> Framework
           </h2>
 
           <div className="hidden md:grid gap-[100px] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
             {/* Invest */}
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Invest
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Grow your capital through structured, <br /> research-driven investment solutions.
@@ -231,7 +231,7 @@ export default function Home() {
                 height={260} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Protect
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Advisory
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Get personalised guidance for <br /> complex financial decisions.
@@ -312,7 +312,7 @@ export default function Home() {
           >
             <div className="md:flex flex-col justify-center items-start md:items-end w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
-                <p className="leading-tighter">
+                <p className="font-satoshi leading-tighter">
                   Calm Strategy <br /> Beats Loud <br /> Advice
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">We believe wealth is built through:</p>
@@ -331,7 +331,7 @@ export default function Home() {
       {/* Structured Support */}
       <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
             Structured Support <br /> At Every Level
           </h2>
 
@@ -340,7 +340,7 @@ export default function Home() {
               <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px] md:w-[533px] md:h-[439px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeFacapIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
-                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">FACAP</p>
+                  <p className="font-satoshi text-[14px] md:[28px] lg:text-[32px] font-bold">FACAP</p>
                   <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Comprehensive financial planning</p>
                 </div>
               </div>
@@ -348,7 +348,7 @@ export default function Home() {
               <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px] md:w-[533px] md:h-[506px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeConsultancyIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
-                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Consultations </p>
+                  <p className="font-satoshi text-[14px] md:[28px] lg:text-[32px] font-bold">Consultations </p>
                   <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Focused clarity for key decisions</p>
                 </div>
               </div>
@@ -358,7 +358,7 @@ export default function Home() {
               <div className="bg-[#000000] text-white flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[506px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomePWAIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
-                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Private Wealth Advisory</p>
+                  <p className="font-satoshi text-[14px] md:[28px] lg:text-[32px] font-bold">Private Wealth Advisory</p>
                   <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Bespoke strategy for high-net-<br className="hidden md:block" />worth clients</p>
                 </div>
               </div>
@@ -366,7 +366,7 @@ export default function Home() {
               <div className="bg-[#FFFFFF] flex flex-col items-start justify-center rounded-[10px] md:rounded-[30px] gap-[22px] md:gap-[50px] lg:gap-[82px] p-[12px] md:p-[40px] w-[169px] h-[160px]  md:w-[533px] md:h-[439px] transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer">
                 <HomeBusinessConsultationIcon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 <div className="flex flex-col items-start justify-center gap-[3px] md:gap-[10px]">
-                  <p className="text-[14px] md:[28px] lg:text-[32px] font-bold">Business Consulting</p>
+                  <p className="font-satoshi text-[14px] md:[28px] lg:text-[32px] font-bold">Business Consulting</p>
                   <p className="text-[12px] md:[18px] lg:text-[24px] font-normal text-[#AEB1BC]">Financial structure for growth</p>
                 </div>
               </div>
@@ -384,9 +384,10 @@ export default function Home() {
       {/* Leadership Highlight */}
       <section className="bg-white">
         <div className="px-4 py-10 md:px-0 md:py-14">
-          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6"><h2 className="mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
-            Leadership <br /> Highlight
-          </h2>
+          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6">
+            <h2 className="font-satoshi mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px]">
+              Leadership <br /> Highlight
+            </h2>
             <p className="text-[#808080] text-[16px] leading-6 font-normal md:text-[24px]">Led by experience, integrity, and vision:</p>
           </div>
           <div className="grid gap-[29px] grid-cols-1 md:grid-cols-2 md:gap-[10px] lg:gap-[35px] md:pl-6 lg:mx-auto lg:max-w-6xl">
@@ -402,7 +403,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:mx-auto items-start justify-center gap-[24px] md:gap-[60px] md:py-20 order-2 md:order-1">
               <div>
-                <h3 className="text-[16px] font-bold md:text-[32px] tracking-[12%] mb-1 md:mb-0.5">DR. Seyi Abiodun</h3>
+                <h3 className="font-satoshi text-[16px] font-bold md:text-[32px] tracking-[12%] mb-1 md:mb-0.5">DR. Seyi Abiodun</h3>
                 <p className="text-[16px] md:text-[20px] text-[#696F8C] font-normal text-[#696F8C]">Founder &amp; Chief Wealth Strategist</p>
               </div>
               <p className="hidden md:block text-[24px] font-semibold">Fundora is led by Dr. Seyi Abiodun, <br /> a seasoned financial professional <br /> committed to helping Africans build <br /> and protect wealth responsibly. <br /> You’re guided, not sold to.

@@ -90,6 +90,22 @@ const aileron = localFont({
   variable: "--font-aileron",
 });
 
+const satoshi = localFont({
+  src: [
+    { path: "./font/satoshi/Satoshi-Light.otf", weight: "300", style: "normal" },
+    { path: "./font/satoshi/Satoshi-LightItalic.otf", weight: "300", style: "italic" },
+    { path: "./font/satoshi/Satoshi-Regular.otf", weight: "400", style: "normal" },
+    { path: "./font/satoshi/Satoshi-Italic.otf", weight: "400", style: "italic" },
+    { path: "./font/satoshi/Satoshi-Medium.otf", weight: "500", style: "normal" },
+    { path: "./font/satoshi/Satoshi-MediumItalic.otf", weight: "500", style: "italic" },
+    { path: "./font/satoshi/Satoshi-Bold.otf", weight: "700", style: "normal" },
+    { path: "./font/satoshi/Satoshi-BoldItalic.otf", weight: "700", style: "italic" },
+    { path: "./font/satoshi/Satoshi-Black.otf", weight: "900", style: "normal" },
+    { path: "./font/satoshi/Satoshi-BlackItalic.otf", weight: "900", style: "italic" },
+  ],
+  variable: "--font-satoshi",
+});
+
 export const metadata: Metadata = {
   title: "Fundora",
   description: "Build. Grow. Protect. Transfer Wealth With Clarity.",
@@ -103,7 +119,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${aileron.variable} antialiased`}
+        className={`${aileron.variable} ${satoshi.variable} antialiased`}
       >
         <Navbar />
         <div className="pt-[68px]">
