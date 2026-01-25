@@ -120,7 +120,7 @@ export default function About() {
             </div>
           </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
-            
+
           </div>
         </div>
       </section>
@@ -154,6 +154,24 @@ export default function About() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision */}
+      <section
+        className="bg-[#F5F5F5] text-black"
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
+          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]">
+            <h2>
+              Our Vision
+            </h2>
+          </div>
+          <div className="w-full flex flex-row items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
+            <h4 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-bold mb-[12px] text-center md:mb-[16px] capitalize">
+              To become the trusted <br className="hidden md:block" /> wealth partner behind <br className="hidden md:block" /> Africa’s first million-dollar, <br className="hidden md:block" /> globally connected, <br className="hidden md:block" /> financially independent <br className="hidden md:block" /> families
+            </h4>
           </div>
         </div>
       </section>
