@@ -23,7 +23,7 @@ export default function About() {
     {
       id: "business",
       body: <p>Multi-generational <br className="md:hidden block" /> <br className="hidden md:block" /> wealth planning</p>,
-      icon: <MultiGenerationalIcon className="w-20 h-10 sm:w-20 sm:h-10 md:w-20 md:h-10 lg:w-20 lg:h-10" />
+      icon: <MultiGenerationalIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10" />
     },
 
   ];
@@ -118,6 +118,9 @@ export default function About() {
             <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-end">
               <Image alt="FACAP" src="/images/our-philosophy-vault.png" width={345} height={321} />
             </div>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
+            
           </div>
         </div>
       </section>
