@@ -120,7 +120,7 @@ export default function About() {
 
       {/* Our Philosophy */}
       <section
-        className="bg-[#F5F5F5] text-black"
+        className="bg-[#FFFFFF] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           <div className="w-full text-center font-bold font text-[16px] md:text-[28px]"><h2>OUR PHILOSOPHY</h2></div>
@@ -185,7 +185,7 @@ export default function About() {
 
       {/* Our Vision */}
       <section
-        className="bg-[#F5F5F5] text-black"
+        className="bg-[#FFFFFF] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           <div className="w-full text-center font-bold font text-[16px] md:text-[28px]">
