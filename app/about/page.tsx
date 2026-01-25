@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChoosePWAIcon, GoldBrushSwipe2, GoodAdviceIcon, LongTermIcon, LongTermPerspectiveIcon, MultiGenerationalIcon, WealthIsBuiltIcon, WorldClassIcon } from "../components/svg";
+import { ChoosePWAIcon, ClarityFirstIcon, GoldBrushSwipe2, GoodAdviceIcon, LongTermIcon, LongTermPerspectiveIcon, LongTermThinkingIcon, MultiGenerationalIcon, ProtectionMattersIcon, StructureAlwaysIcon, WealthIsBuiltIcon, WorldClassIcon } from "../components/svg";
 
 export default function About() {
 
@@ -44,6 +44,41 @@ export default function About() {
       icon: <LongTermIcon className="w-10 h-10 sm:w-10 sm:h-15 md:w-15 md:h-10 lg:w-20 lg:h-20" />,
       text: <p className="font-semibold text-[18px] md:text-[24px]">Long-term thinking always <br /> outperforms quick wins</p>
     },
+  ]
+
+  const howWeWork = [
+    {
+      id: "clarity-first",
+      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Clarity First</p>,
+      body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
+        We simplify complexity before <br /> recommending action.
+      </p>,
+      icon: <ClarityFirstIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
+    },
+    {
+      id: "structure-always",
+      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Structure Always</p>,
+      body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
+        Every plan is system-based, not <br /> emotional.
+      </p>,
+      icon: <StructureAlwaysIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
+    },
+    {
+      id: "protection-matters",
+      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Protection Matters</p>,
+      body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
+        We plan for uncertainty—not <br /> just growth.
+      </p>,
+      icon: <ProtectionMattersIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
+    },
+    {
+      id: "protection-matters",
+      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Long-Term Thinking</p>,
+      body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
+        We focus on sustainability, not <br /> speculation.
+      </p>,
+      icon: <LongTermThinkingIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
+    }
   ]
 
   return (
@@ -204,6 +239,54 @@ export default function About() {
               </span>{" "}
               behind <br className="hidden md:block" /> Africa’s first million-dollar, <br className="hidden md:block" /> globally connected, <br className="hidden md:block" /> financially independent <br className="hidden md:block" /> families
             </h4>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Work */}
+      <section
+        className="bg-[#F5F5F5] text-black"
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
+          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]">
+            <h2>
+              How We Work
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-start gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
+            <div className="order-1 md:order-2 h-full w-full text-left">
+              <p className="font-satoshi text-[20px] md:text-[32px] leading-tight tracking-tight font-bold mb-[12px] md:mb-[16px] uppercase">
+                Our advisory <br /> approach
+              </p>
+              <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px] text-[#808080]">
+                Every Fundora  relationship is <br className="md:hidden block" /> guided <br className="hidden md:block" /> by four principles:
+              </p>
+              <div className="flex flex-col justify-center items-start mt-[40px] md:mt-[60px]">
+                {howWeWork.map(
+                  (work, index) => (
+                    <div
+                      key={work.id}
+                      className={`flex flex-row justify-start w-full items-start gap-[19px] md:gap-[30px] ${index !== howWeWork.length - 1 ? "border-b border-[#BFBFBF] pb-[19px] pb-[24px] mb-[24px] md:pb-[40px] md:mb-[40px]" : ""}`}
+                    >
+                      {work.icon}
+                      <div className="flex flex-col gap-[5px] md:gap-[8px]">{work.title}{work.body}</div>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+            <div className="order-2 md:order-1 flex flex-row justify-center items-center md:justify-end h-full w-full rounded-[16px] md:rounded-[30px] overflow-hidden">
+              <div className="relative w-full h-full min-h-[280px] md:min-h-[400px]">
+                <Image
+                  alt="our-advisory-approach"
+                  src="/images/about-hww.png"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
