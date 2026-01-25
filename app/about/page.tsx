@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChoosePWAIcon, LongTermPerspectiveIcon, MultiGenerationalIcon, WorldClassIcon } from "../components/svg";
 
 export default function About() {
@@ -95,6 +96,28 @@ export default function About() {
               </Link>
             </div>
             <p className="text-center md:text-left max-w-xl text-[11px] md:text-[16px] font-extralight md:font-light text-gray-200">We guide Africans at home and abroad on investing, <br /> protecting their wealth, setting up trust funds, and <br /> creating long-term financial legacies.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FACAP Section */}
+      <section
+        className="bg-[#F5F5F5] text-black"
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
+          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]"><h2>OUR PHILOSOPHY</h2></div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
+            <div className="order-1 md:order-none">
+              <h3 className="font-satoshi text-[24px] md:text-[56px] leading-tight tracking-tight font-bold mb-[12px] md:mb-[16px]">
+                Wealth should <br /> feel calm, not <br /> chaotic
+              </h3>
+              <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px] text-[#808080]">
+                We believe:
+              </p>
+            </div>
+            <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-end">
+              <Image alt="FACAP" src="/images/our-philosophy-vault.png" width={345} height={321} />
+            </div>
           </div>
         </div>
       </section>
