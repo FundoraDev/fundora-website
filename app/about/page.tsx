@@ -49,7 +49,7 @@ export default function About() {
   const howWeWork = [
     {
       id: "clarity-first",
-      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Clarity First</p>,
+      title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Clarity First</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
         We simplify complexity before <br /> recommending action.
       </p>,
@@ -57,7 +57,7 @@ export default function About() {
     },
     {
       id: "structure-always",
-      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Structure Always</p>,
+      title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Structure Always</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
         Every plan is system-based, not <br /> emotional.
       </p>,
@@ -65,7 +65,7 @@ export default function About() {
     },
     {
       id: "protection-matters",
-      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Protection Matters</p>,
+      title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Protection Matters</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
         We plan for uncertainty—not <br /> just growth.
       </p>,
@@ -73,7 +73,7 @@ export default function About() {
     },
     {
       id: "protection-matters",
-      title: <p className="text-black text-[16px] md:text-[28px] font-bold font-satoshi">Long-Term Thinking</p>,
+      title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Long-Term Thinking</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
         We focus on sustainability, not <br /> speculation.
       </p>,
@@ -112,14 +112,14 @@ export default function About() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold">
               Fundora Is Building
               <br />
               Africa's Next Generation
               <br />
               Of Wealthy Families.
             </h1>
-            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold">
               Fundora Is
               <br />
               Building Africa's
@@ -158,17 +158,17 @@ export default function About() {
         className="bg-[#FFFFFF] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
-          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]"><h2>OUR PHILOSOPHY</h2></div>
+          <div className="w-full text-center leading-tight tracking-[5px] font-bold font text-[16px] md:text-[28px]"><h2>OUR PHILOSOPHY</h2></div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
             <div className="order-1 md:order-none">
-              <h3 className="font-satoshi text-[24px] md:text-[56px] leading-tight tracking-tight font-bold mb-[12px] md:mb-[16px]">
+              <h3 className="font-satoshi text-[24px] md:text-[56px] leading-tight tracking-tight font-extrabold capitalize mb-[12px] md:mb-[16px]">
                 Wealth should <br /> feel calm, not <br /> chaotic
               </h3>
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px] text-[#808080]">
                 We believe:
               </p>
             </div>
-            <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-end">
+            <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-center">
               <Image alt="FACAP" src="/images/our-philosophy-vault.png" width={345} height={321} />
             </div>
           </div>
@@ -188,14 +188,14 @@ export default function About() {
       {/* Our Mission */}
       <section className="bg-white text-black">
         <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10 text-center">
-          <h2 className="text-black font-bold text-[16px] md:text-[28px] uppercase">Our Mission</h2>
+          <h2 className="text-black font-bold text-[16px] md:text-[28px] uppercase tracking-[5px]">Our Mission</h2>
           {/* Africa's next generation */}
           <div
             className="flex flex-col md:justify-center md:items-start gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden bg-[url('/images/our-mission-africa-mb.png')] bg-cover bg-no-repeat !bg-[length:190px] !bg-[position:right_60%] md:bg-[url('/images/our-mission-africa.png')] md:!bg-[length:300px] md:!bg-[position:top_15%_right_10%]"
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-start w-full md:w-auto md:justify-start text-left md:text-left md:text-[52px] text-white gap-[16px] mb-[50px]">
-                <p className="font-satoshi leading-tighter">
+                <p className="font-satoshi leading-tighter font-extrabold capitalize">
                   To create Africa’s <br className="md:hidden block" /> next <br className="hidden md:block" /> generation <br className="md:hidden block" /> of wealthy <br className="md:hidden block" /> <br className="hidden md:block" /> families.
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">
@@ -223,13 +223,13 @@ export default function About() {
         className="bg-[#FFFFFF] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
-          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]">
+          <div className="w-full text-center font-bold font text-[16px] md:text-[28px] tracking-[5px]">
             <h2>
               Our Vision
             </h2>
           </div>
           <div className="w-full flex flex-row items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
-            <h4 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-bold mb-[12px] text-center md:mb-[16px] capitalize">
+            <h4 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-extrabold mb-[12px] text-center md:mb-[16px] capitalize">
               To become the trusted <br className="hidden md:block" />{" "}
               <span className="relative z-10 isolate inline-flex items-center justify-center px-4 py-1">
                 <span className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none">
@@ -248,7 +248,7 @@ export default function About() {
         className="bg-[#F5F5F5] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
-          <div className="w-full text-center font-bold font text-[16px] md:text-[28px]">
+          <div className="w-full text-center font-extrabold font text-[24px] md:text-[48px]">
             <h2>
               How We Work
             </h2>
