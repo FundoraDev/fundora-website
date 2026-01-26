@@ -13,13 +13,13 @@ export default function Footer() {
           className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0 bg-no-repeat bg-top bg-cover"
 
         >
-          <h1 className="font-satoshi text-[28px] md:text-[38px] lg:text-[48px] font-bold mb-0">
+          <h1 className="font-satoshi text-[28px] md:text-[38px] lg:text-[48px] font-extrabold mb-0">
             Let&apos;s Build Your Financial Future
           </h1>
 
           <div className="font-satoshi flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
             <div className="h-[3px] md:h-[6px] w-5 sm:w-10 bg-white"></div>
-            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-bold">
+            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-extrabold">
               The{" "}
               <span className="relative inline-flex items-center justify-center px-2 py-1">
                 <span className="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none select-none">
