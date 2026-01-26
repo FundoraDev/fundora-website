@@ -76,10 +76,10 @@ export default function Programs() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold capitalize">
               Structured <br /> guidance for every <br /> stage of wealth
             </h1>
-            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold capitalize">
               Structured <br /> guidance for <br /> every stage <br /> of wealth
             </h1>
             <p className="hidden md:block max-w-xl text-[14px] md:text-[24px] font-normal text-gray-200">
@@ -117,7 +117,7 @@ export default function Programs() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
             <div className="order-2 md:order-none">
-              <h3 className="font-satoshi text-[24px] md:text-[56px] font-bold mb-[12px] md:mb-[19px]">FACAP</h3>
+              <h3 className="font-satoshi text-[24px] md:text-[56px] font-extrabold mb-[12px] md:mb-[19px]">FACAP</h3>
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px]">Finance and Career Accountability Program (FACAP) is a comprehensive financial planning experience for individuals and families who want full visibility and control over their financial lives.
               </p>
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px]">This program brings all key areas together—income, investing, protection, and long-term planning—into one clear structure.</p>
@@ -134,16 +134,16 @@ export default function Programs() {
         className="bg-white text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 pb-16 pt-10 md:flex-col items-start justify-center md:gap-[60px] md:px-6 lg:pb-20 lg:pt-14">
-          <h2 className="font-satoshi text-[24px] md:text-[56px] font-bold mb-[12px] md:mb-[19px] leading-tight">FACAP is Ideal if <br className="hidden md:block" /> You Want:</h2>
+          <h2 className="font-satoshi text-[24px] md:text-[56px] font-extrabold mb-[12px] md:mb-[19px] leading-tight">FACAP is Ideal if <br className="hidden md:block" /> You Want:</h2>
           <div className="w-[343px] h-[418px] md:w-full md:h-auto mx-auto md:mx-0 grid grid-cols-1 md:grid-cols-2 rounded-[16.37px] md:rounded-[60px] py-[27px] px-[16px] md:py-[90px] md:px-[80px] facap2-bg">
             <div className="flex flex-col items-start justify-end md:justify-center gap-[12px] md:gap-[48px] text-white">
-              <div className="flex flex-row justify-center items-center gap-[14px] font-bold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
+              <div className="flex flex-row justify-center items-center gap-[14px] font-extrabold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
                 <Facap2Icon className="w-12 h-12" />
                 <p>
                   Clear understanding of <br /> financial planning
                 </p>
               </div>
-              <div className="flex flex-row justify-center items-center gap-[14px] font-bold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
+              <div className="flex flex-row justify-center items-center gap-[14px] font-extrabold text-[12px] leading-tight md:text-[28px] md:gap-[32px]">
                 <UnderstandHowToInvest className="w-12 h-12" />
                 <p>
                   Understand how to invest in <br /> stocks and fixed income <br /> instruments as a beginner
@@ -161,7 +161,7 @@ export default function Programs() {
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-12 md:gap-16 lg:gap-20 px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14">
 
-          <h2 className="font-satoshi text-[24px] md:text-[56px] font-bold mb-4 md:mb-6 leading-tight text-center">Our FACAP Wealth <br className="hidden md:block" /> Framework</h2>
+          <h2 className="font-satoshi text-[24px] md:text-[56px] font-extrabold mb-4 md:mb-6 leading-tight text-center">Our FACAP Wealth <br className="hidden md:block" /> Framework</h2>
 
           {/* Consultation: image first on mobile, text left / image right on desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 items-center w-full text-left">
@@ -270,7 +270,7 @@ export default function Programs() {
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-center md:items-start w-full md:w-auto md:justify-start text-center md:text-left md:text-[52px] text-white gap-[16px] md:mb-[50px]">
-                <p className="font-satoshi leading-tighter">
+                <p className="font-satoshi font-extrabold leading-tighter">
                   Start with <br className="hidden md:block" /> clarity
                 </p>
                 <p className="text-[16px] md:text-[22.38px] font-normal tracking-normal">If you’re unsure where to begin:</p>
