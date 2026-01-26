@@ -93,14 +93,14 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
           <div className="flex-1 space-y-6">
-            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold">
               Build. Grow. Protect
               <br />
               Transfer Wealth
               <br />
               With Clarity.
             </h1>
-            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-bold">
+            <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px]  font-extrabold">
               Build. Grow. Protect
               <br />
               Transfer Wealth
@@ -197,14 +197,14 @@ export default function Home() {
       {/* A Complete Wealth Framework */}
       <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-extrabold leading-7 md:leading-12">
             A Complete Wealth <br /> Framework
           </h2>
 
           <div className="hidden md:grid gap-[100px] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]">
             {/* Invest */}
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-bold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Invest
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Grow your capital through structured, <br /> research-driven investment solutions.
@@ -231,7 +231,7 @@ export default function Home() {
                 height={260} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-bold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Protect
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
-              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-semibold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
+              <div className="font-satoshi mb-4 inline-flex rounded-full bg-inherit text-black text-[32px] font-bold md:tracking-[12%] md:mb-[13px] lg:mb-[16px]">
                 Advisory
               </div>
               <p className="mb-5 text-[20px] font-normal text-sm text-[#696F8C] md:mb-[35px] lg:mb-[48px]">Get personalised guidance for <br /> complex financial decisions.
@@ -311,7 +311,7 @@ export default function Home() {
             className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 bg-[url('/images/calm-strategy-mobile.png')] md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-size-[300px] bg-no-repeat bg-[right_bottom] md:bg-left overflow-hidden"
           >
             <div className="md:flex flex-col justify-center items-start md:items-end w-full space-y-4">
-              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
+              <div className="flex flex-col text-[32px] leading-tight tracking-tight font-extrabold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
                 <p className="font-satoshi leading-tighter">
                   Calm Strategy <br /> Beats Loud <br /> Advice
                 </p>
@@ -331,7 +331,7 @@ export default function Home() {
       {/* Structured Support */}
       <section className="bg-[#F5F5F5]">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-bold leading-7 md:leading-12">
+          <h2 className="font-satoshi mb-15 text-center text-[24px] md:text-[32px] lg:text-[48px] font-extrabold leading-7 md:leading-12">
             Structured Support <br /> At Every Level
           </h2>
 

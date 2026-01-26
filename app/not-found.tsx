@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center h-full gap-10 text-white">
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-68px)] gap-10 bg-black text-white">
       <div className="flex flex-row justify-center items-center gap-5">
         <p className="font-extrabold text-xl">404</p>
         <div className="h-[5vh] border-white border"></div>
