@@ -303,7 +303,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Calm Strategy, Structured Support, Leadership Highlights */}
+      {/* Calm Strategy */}
       <section className="bg-white text-black">
         <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
           {/* Calm Strategy block */}

@@ -254,7 +254,7 @@ export default function About() {
             </h2>
           </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-start gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
-            <div className="order-1 md:order-2 h-full w-full text-left">
+            <div className="order-2 md:order-2 h-full w-full text-left">
               <p className="font-satoshi text-[20px] md:text-[32px] leading-tight tracking-tight font-bold mb-[12px] md:mb-[16px] uppercase">
                 Our advisory <br /> approach
               </p>
@@ -275,8 +275,8 @@ export default function About() {
                 )}
               </div>
             </div>
-            <div className="order-2 md:order-1 flex flex-row justify-center items-center md:justify-end h-full w-full rounded-[16px] md:rounded-[30px] overflow-hidden">
-              <div className="relative w-full h-full min-h-[280px] md:min-h-[400px]">
+            <div className="order-1 md:order-1 flex flex-row justify-center items-center md:justify-end h-full w-full rounded-[16px] md:rounded-[30px] overflow-hidden">
+              <div className="relative w-full h-full min-h-[480px] md:min-h-[500px]">
                 <Image
                   alt="our-advisory-approach"
                   src="/images/about-hww.png"
@@ -285,6 +285,48 @@ export default function About() {
                   sizes="(min-width: 768px) 50vw, 100vw"
                   priority
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership You Can Trust */}
+      <section className="bg-white">
+        <div className="px-4 py-10 md:px-0 md:py-14">
+          <div className=" mb-[34px] md:mb-[60px] mx-auto lg:max-w-7xl px-4 md:px-6">
+            <h2 className="font-satoshi mb-1 text-left text-[24px] leading-7 md:leading-[1.1] font-extrabold md:mb-3 md:text-[56px] capitalize">
+              Leadership You <br /> Can trust
+            </h2>
+            <div>
+              <p className="text-[#808080] text-[16px] leading-6 font-normal md:text-[24px]">
+                Led by experience, <br className="md:hidden block" /> integrity, and vision:
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-[29px] grid-cols-1 md:grid-cols-2 md:gap-[10px] lg:gap-[35px] md:pl-6 lg:mx-auto lg:max-w-6xl">
+            {/* Image first on small screens, second on md+ */}
+            <div className="order-1 md:order-2">
+              <Image
+                src="/images/seyi-abiodun.png"
+                alt="Fundora leadership portrait"
+                width={672}
+                height={554}
+                className="w-full h-full object-cover rounded-[80px]"
+              />
+            </div>
+            <div className="flex flex-col md:mx-auto items-start justify-center gap-[24px] md:gap-[60px] md:py-20 order-2 md:order-1">
+              <div>
+                <h3 className="font-satoshi text-[16px] font-bold md:text-[32px] tracking-[12%] mb-1 md:mb-0.5">DR. Seyi Abiodun</h3>
+                <p className="text-[16px] md:text-[20px] text-[#696F8C] font-normal text-[#696F8C]">Founder &amp; Chief Wealth Strategist</p>
+              </div>
+              <div className="flex flex-col gap-[20px] md:gap-[40px]">
+              <p className="text-[16px] md:text-[24px] font-semibold">
+                Dr. Seyi Abiodun is a financial strategist <br className="hidden md:block"/> with deep experience advising individuals, <br className="hidden md:block"/> families, and businesses on wealth <br className="hidden md:block"/> building, protection, and long-term <br className="hidden md:block"/> planning.
+              </p>
+              <p className="text-[16px] md:text-[24px] font-semibold">
+                He is known for his calm, structured <br className="hidden md:block"/> approach to finance—helping clients think <br className="hidden md:block"/> clearly, act wisely, and plan responsibly. At <br className="hidden md:block"/> Fundora, advice is never rushed. Clients are <br className="hidden md:block"/> guided—not pressured.
+              </p>
               </div>
             </div>
           </div>
