@@ -86,14 +86,14 @@ export default function About() {
       <style dangerouslySetInnerHTML={{
         __html: `
         .home-hero-bg {
-          background-image: url('/images/about-hero-mb.png');
+          background-image: url('/images/about-hero-mb.avif');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         @media (min-width: 768px) {
           .home-hero-bg {
-            background-image: url('/images/about-hero-dk.png');
+            background-image: url('/images/about-hero-dk.avif');
             background-position: right;
           }
         }
@@ -171,7 +171,7 @@ export default function About() {
             <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-center">
               <Image
                 alt="FACAP"
-                src="/images/our-philosophy-vault.png"
+                src="/images/our-philosophy-vault.avif"
                 width={345}
                 height={321}
                 className="h-auto w-auto"
@@ -197,7 +197,7 @@ export default function About() {
           <h2 className="text-black font-bold text-[16px] md:text-[28px] uppercase tracking-[5px]">Our Mission</h2>
           {/* Africa's next generation */}
           <div
-            className="flex flex-col md:justify-center md:items-start gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden bg-[url('/images/our-mission-africa-mb.png')] bg-cover bg-no-repeat !bg-[length:190px] !bg-[position:right_60%] md:bg-[url('/images/our-mission-africa.png')] md:!bg-[length:300px] md:!bg-[position:top_15%_right_10%]"
+            className="flex flex-col md:justify-center md:items-start gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 md:bg-left overflow-hidden bg-[url('/images/our-mission-africa-mb.avif')] bg-cover bg-no-repeat !bg-[length:190px] !bg-[position:right_60%] md:bg-[url('/images/our-mission-africa.avif')] md:!bg-[length:300px] md:!bg-[position:top_15%_right_10%]"
           >
             <div className="md:flex flex-col justify-center items-start md:items-start w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-bold justify-center items-start w-full md:w-auto md:justify-start text-left md:text-left md:text-[52px] text-white gap-[16px] mb-[50px]">
@@ -285,7 +285,7 @@ export default function About() {
               <div className="relative w-full h-full min-h-[480px] md:min-h-[500px]">
                 <Image
                   alt="our-advisory-approach"
-                  src="/images/about-hww.png"
+                  src="/images/about-hww.avif"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(min-width: 768px) 50vw, 100vw"
@@ -314,7 +314,7 @@ export default function About() {
             {/* Image first on small screens, second on md+ */}
             <div className="order-1 md:order-2">
               <Image
-                src="/images/seyi-abiodun.png"
+                src="/images/seyi-abiodun.avif"
                 alt="Fundora leadership portrait"
                 width={672}
                 height={554}
