@@ -36,7 +36,7 @@ export default function Footer() {
           </p>
 
           <Link
-            href="/consultation"
+            href="#"
             className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] rounded-[36px] inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 transition-colors text-[16px]"
           >
             Book a Consultation
@@ -50,14 +50,14 @@ export default function Footer() {
           {/* Left Links */}
           <div className="flex flex-col md:flex-row flex-wrap gap-2 md:gap-4 text-black justify-center md:justify-start items-center">
             <Link
-              href="/customer-relationship-summaries"
+              href="#"
               className="hover:text-black transition-colors underline text-center md:text-left"
             >
               Customer Relationship Summaries
             </Link>
             <div className="h-[36px] bg-[#808080] border border-[#808080] hidden md:block"></div>
             <Link
-              href="/finra-brokercheck"
+              href="#"
               className="hover:text-black transition-colors underline text-center md:text-left"
             >
               FINRA&apos;s BrokerCheck
@@ -69,7 +69,7 @@ export default function Footer() {
             <span className="text-sm md:text-[16px] mb-1 md:mb-0 md:mr-2">Follow us on</span>
             <div className="flex items-center gap-2 sm:gap-3">
               <Link
-                href="https://twitter.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
@@ -78,7 +78,7 @@ export default function Footer() {
                 <FaXTwitter className="h-5 w-5 text-black" />
               </Link>
               <Link
-                href="https://instagram.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
@@ -87,7 +87,7 @@ export default function Footer() {
                 <FaInstagram className="h-5 w-5 text-black" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
@@ -96,7 +96,7 @@ export default function Footer() {
                 <FaLinkedin className="h-5 w-5 text-black" />
               </Link>
               <Link
-                href="https://tiktok.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
@@ -105,7 +105,7 @@ export default function Footer() {
                 <FaTiktok className="h-5 w-5 text-black" />
               </Link>
               <Link
-                href="https://youtube.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition-colors"
@@ -128,7 +128,7 @@ export default function Footer() {
               <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
-                    href="/mutual-funds"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Mutual Funds
@@ -136,7 +136,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/stocks"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Stocks
@@ -144,7 +144,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/fixed-income"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Fixed Income
@@ -152,7 +152,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/alternative-investments"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Alternative Investments
@@ -160,7 +160,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/retirement"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Retirement
@@ -168,7 +168,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/life-insurance"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Life Insurance
@@ -176,7 +176,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/income-protection"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Income Protection
@@ -184,7 +184,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/asset-business-coverage"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Asset & Business Coverage
@@ -199,20 +199,20 @@ export default function Footer() {
               <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
-                    href="/about"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     About us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="hover:underline transition-colors">
+                  <Link href="#" className="hover:underline transition-colors">
                     Blog
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/partner-with-us"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Partner With Us
@@ -220,7 +220,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/affiliates"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Affiliates
@@ -228,7 +228,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/press"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Press
@@ -236,7 +236,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/careers"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Careers
@@ -251,7 +251,7 @@ export default function Footer() {
               <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
-                    href="/terms-conditions"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Terms & Conditions
@@ -259,7 +259,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/disclosures"
+                    href="#"
                     className="hover:underline transition-colors"
                   >
                     Disclosures
