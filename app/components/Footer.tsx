@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="text-black">
       {/* Hero Section */}
-      <div className="relative bg-black text-white py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 overflow-hidden" style={{ backgroundImage: "url('/images/footer-top.png')", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+      <div className="relative bg-black text-white py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 overflow-hidden" style={{ backgroundImage: "url('/images/footer-top.avif')", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
         {/* Hero Content */}
         <div
