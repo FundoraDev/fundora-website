@@ -72,7 +72,7 @@ export default function About() {
       icon: <ProtectionMattersIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
     },
     {
-      id: "protection-matters",
+      id: "long-term",
       title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Long-Term Thinking</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
         We focus on sustainability, not <br /> speculation.
