@@ -6,5 +6,9 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUs() {
-  return <div>ContactUs</div>;
+  return (
+    <div>
+      {/* ContactUs */}
+    </div>
+  );
 }
