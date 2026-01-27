@@ -34,7 +34,7 @@ export default function Protect() {
       `}} />
       {/* Hero Section */}
       <section
-        className="home-hero-bg bg-black text-white"
+        className="w-full h-[100vh] home-hero-bg bg-black text-white"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
           {/* Left copy */}
