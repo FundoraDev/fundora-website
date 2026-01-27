@@ -18,21 +18,21 @@ export default function Home() {
       title: "Invest",
       description: "Grow your capital through structured, research-driven investment solutions.",
       list: ["Mutual Fund", "Stocks & Fixed Income Instruments", "Alternative Investments"],
-      path: "/images/invest-home.png",
+      path: "/images/invest-home.avif",
     },
     {
       id: "protect",
       title: "Protect",
       description: "Safeguard your income, assets, and future.",
       list: ["Life & Health Insurance", "Income Protection", "Asset & Business Coverage"],
-      path: "/images/protect-home.png",
+      path: "/images/protect-home.avif",
     },
     {
       id: "advisory",
       title: "Advisory",
       description: "Get personalised guidance for complex financial decisions.",
       list: ["Financial Consultation", "Private Wealth Advisory", "Business & Strategy Support"],
-      path: "/images/advisory-home.png",
+      path: "/images/advisory-home.avif",
     },
   ];
 
@@ -220,14 +220,14 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center rounded-3xl 
             bg-black p-6">
-              <Image src="/images/invest-home.png" alt="Invest" width={260}
+              <Image src="/images/invest-home.avif" alt="Invest" width={260}
                 height={260} className="w-full h-full object-cover" />
             </div>
 
             {/* Protect */}
             <div className="flex items-center justify-center rounded-3xl 
             bg-black p-6">
-              <Image src="/images/protect-home.png" alt="Protect" width={260}
+              <Image src="/images/protect-home.avif" alt="Protect" width={260}
                 height={260} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-start justify-center rounded-3xl bg-transparent text-[#141A00 font-normal] p-6 md:p-7">
@@ -267,7 +267,7 @@ export default function Home() {
                 className="z-20 pointer-events-none absolute inset-x-0 top-0 h-1/3 opacity-70 blur-2xl bg-[radial-gradient(circle_at_top,_#00DB0E_0%,_rgba(0,219,14,0)_70%)]"
               />
               <Image
-                src="/images/advisory-home.png"
+                src="/images/advisory-home.avif"
                 alt="Advisory"
                 width={260}
                 height={260}
@@ -308,7 +308,7 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-4 py-12 md:px-6 md:py-16 space-y-10">
           {/* Calm Strategy block */}
           <div
-            className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 bg-[url('/images/calm-strategy-mobile.png')] md:bg-[url('/images/calm-strategy.png')] md:bg-size-[300px] bg-size-[300px] bg-no-repeat bg-[right_bottom] md:bg-left overflow-hidden"
+            className="flex flex-col md:justify-center md:items-end gap-8 rounded-[20px] md:rounded-[60px] bg-black p-6 md:p-8 bg-[url('/images/calm-strategy-mobile.avif')] md:bg-[url('/images/calm-strategy.avif')] md:bg-size-[300px] bg-size-[300px] bg-no-repeat bg-[right_bottom] md:bg-left overflow-hidden"
           >
             <div className="md:flex flex-col justify-center items-start md:items-end w-full space-y-4">
               <div className="flex flex-col text-[32px] leading-tight tracking-tight font-extrabold justify-start w-full md:w-auto md:justify-end text-left md:text-right md:text-[52px] text-white gap-[16px] md:mb-[50px]">
@@ -394,7 +394,7 @@ export default function Home() {
             {/* Image first on small screens, second on md+ */}
             <div className="order-1 md:order-2">
               <Image
-                src="/images/seyi-abiodun.png"
+                src="/images/seyi-abiodun.avif"
                 alt="Fundora leadership portrait"
                 width={672}
                 height={554}

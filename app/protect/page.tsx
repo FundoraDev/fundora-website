@@ -13,14 +13,14 @@ export default function Protect() {
       <style dangerouslySetInnerHTML={{
         __html: `
         .home-hero-bg {
-          background-image: url('/images/protect-hero-mb.png');
+          background-image: url('/images/protect-hero-mb.avif');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         @media (min-width: 768px) {
           .home-hero-bg {
-            background-image: url('/images/protect-hero-dk.png');
+            background-image: url('/images/protect-hero-dk.avif');
             background-position: right;
           }
         }
