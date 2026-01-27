@@ -169,7 +169,13 @@ export default function About() {
               </p>
             </div>
             <div className="order-2 md:order-none flex flex-row justify-center items-center md:justify-center">
-              <Image alt="FACAP" src="/images/our-philosophy-vault.png" width={345} height={321} />
+              <Image
+                alt="FACAP"
+                src="/images/our-philosophy-vault.png"
+                width={345}
+                height={321}
+                className="h-auto w-auto"
+              />
             </div>
           </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-[20px] md:gap-[20px]">
