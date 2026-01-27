@@ -58,14 +58,14 @@ export default function Programs() {
           display: none;
         }
         .facap2-bg {
-          background-image: url('/images/facap2-mb.png');
+          background-image: url('/images/facap2-mb.avif');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         @media (min-width: 768px) {
           .facap2-bg {
-            background-image: url('/images/facap2.png');
+            background-image: url('/images/facap2.avif');
           }
         }
       `}} />
@@ -123,7 +123,7 @@ export default function Programs() {
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px]">This program brings all key areas together—income, investing, protection, and long-term planning—into one clear structure.</p>
             </div>
             <div className="order-1 md:order-none">
-              <Image alt="FACAP" src="/images/facap.png" width={639} height={423} />
+              <Image alt="FACAP" src="/images/facap.avif" width={639} height={423} />
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function Programs() {
             <div className="order-1 md:order-2 w-full max-w-[560px] md:max-w-none mx-auto md:mx-0">
               <div className="relative w-full aspect-[604/629] overflow-hidden rounded-[20px] sm:rounded-[28px] md:rounded-[40px] lg:rounded-[50px]">
                 <Image
-                  src="/images/programs-consultation.png"
+                  src="/images/programs-consultation.avif"
                   alt="Consultation"
                   width={604}
                   height={629}
@@ -199,7 +199,7 @@ export default function Programs() {
             <div className="order-1 md:order-1 w-full max-w-[560px] md:max-w-none mx-auto md:mx-0">
               <div className="relative w-full aspect-[604/629] overflow-hidden rounded-[20px] sm:rounded-[28px] md:rounded-[40px] lg:rounded-[50px]">
                 <Image
-                  src="/images/programs-pwa.png"
+                  src="/images/programs-pwa.avif"
                   alt="Private Wealth Advisory"
                   width={604}
                   height={629}
@@ -232,7 +232,7 @@ export default function Programs() {
             <div className="order-1 md:order-2 w-full max-w-[560px] md:max-w-none mx-auto md:mx-0">
               <div className="relative w-full aspect-[604/629] overflow-hidden rounded-[20px] sm:rounded-[28px] md:rounded-[40px] lg:rounded-[50px]">
                 <Image
-                  src="/images/programs-bc.png"
+                  src="/images/programs-bc.avif"
                   alt="Business Consulting"
                   width={604}
                   height={629}
