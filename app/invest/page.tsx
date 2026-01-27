@@ -77,13 +77,13 @@ export default function Invest() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href="/consultation"
+                href="#"
                 className="sm:w-auto text-center w-full rounded-[36px] bg-[#F9FAFC] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
               >
                 Start Your Wealth Journey
               </Link>
               <Link
-                href="/consultation"
+                href="#"
                 className="sm:w-auto w-full text-center rounded-[36px] bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
               >
                 Book a Consultation
