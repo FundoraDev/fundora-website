@@ -115,9 +115,9 @@ export default function Programs() {
         className="bg-[#F5F5F5] text-black"
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-col md:items-center justify-center md:gap-12 md:px-6 lg:pb-20 lg:pt-14">
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
             <div className="order-2 md:order-none">
-              <h3 className="font-satoshi text-[24px] md:text-[56px] font-extrabold mb-[12px] md:mb-[19px]">FACAP</h3>
+              <h2 className="font-satoshi text-[24px] md:text-[56px] font-extrabold mb-[12px] md:mb-[19px]">FACAP</h2>
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px]">Finance and Career Accountability Program (FACAP) is a comprehensive financial planning experience for individuals and families who want full visibility and control over their financial lives.
               </p>
               <p className="text-[16px] md:text-[24px] font-normal mb-[12px] md:mb-[19px]">This program brings all key areas together—income, investing, protection, and long-term planning—into one clear structure.</p>

@@ -229,7 +229,7 @@ export default function About() {
             </h2>
           </div>
           <div className="w-full flex flex-row items-center justify-center gap-[10px] md:gap-[24px] gap-[23px] md:gap-[117px]">
-            <h4 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-extrabold mb-[12px] text-center md:mb-[16px] capitalize">
+            <h3 className="font-satoshi text-[32px] md:text-[40px] lg:text-[60px] leading-tight tracking-tight font-extrabold mb-[12px] text-center md:mb-[16px] capitalize">
               To become the trusted <br className="hidden md:block" />{" "}
               <span className="relative z-10 isolate inline-flex items-center justify-center px-4 py-1">
                 <span className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none">
@@ -238,7 +238,7 @@ export default function About() {
                 <span className="relative z-10 text-black">wealth partner</span>
               </span>{" "}
               behind <br className="hidden md:block" /> Africa’s first million-dollar, <br className="hidden md:block" /> globally connected, <br className="hidden md:block" /> financially independent <br className="hidden md:block" /> families
-            </h4>
+            </h3>
           </div>
         </div>
       </section>

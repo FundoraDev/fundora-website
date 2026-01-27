@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full px-4 pb-16 pt-10 md:px-6 lg:pb-20 lg:pt-14 bg-black flex flex-col items-center justify-center flex-wrap gap-[48px] pt-4 text-xs text-gray-300 text-center">
-          <h3 className="font-satoshi leading-9 text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-extrabold">
+          <h2 className="font-satoshi leading-9 text-white text-center md:text-left text-[20px] md:text-[24px] lg:text-[32px] font-extrabold">
             Helping Africans Everywhere <br className="block md:hidden" /> Build{" "}
             <span className="relative inline-flex items-center justify-center px-2 py-1">
               <span className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none select-none">
@@ -136,7 +136,7 @@ export default function Home() {
               </span>
               <span className="relative text-black z-15">Lasting Wealth</span>
             </span>
-          </h3>
+          </h2>
           <div className="w-full mx-auto grid grid-cols-3 justify-between items-center text-[12px] text-white md:text-[24px] font-semibold">
             <div className="flex flex-col items-center justify-center gap-[12px]">
               <DisciplinedIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />

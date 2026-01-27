@@ -13,13 +13,13 @@ export default function Footer() {
           className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0 bg-no-repeat bg-top bg-cover"
 
         >
-          <h1 className="font-satoshi text-[28px] md:text-[38px] lg:text-[48px] font-extrabold mb-0">
+          <h2 className="font-satoshi text-[28px] md:text-[38px] lg:text-[48px] font-extrabold mb-0">
             Let&apos;s Build Your Financial Future
-          </h1>
+          </h2>
 
           <div className="font-satoshi flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
             <div className="h-[3px] md:h-[6px] w-5 sm:w-10 bg-white"></div>
-            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-extrabold">
+            <h2 className="text-[28px] md:text-[38px] lg:text-[48px] font-extrabold">
               The{" "}
               <span className="relative inline-flex items-center justify-center px-2 py-1">
                 <span className="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none select-none">
@@ -27,7 +27,7 @@ export default function Footer() {
                 </span>
                 <span className="relative text-black">Right Way</span>
               </span>
-            </h1>
+            </h2>
           </div>
 
           <p className="text-[#AEB1BC] text-[20px] font-light md:text-[24px] mb-6 sm:mb-8 max-w-2xl mx-auto px-2 sm:px-0">
@@ -316,9 +316,9 @@ export default function Footer() {
       {/* Large Logo at Bottom */}
       <div className="flex flex-row justify-center items-center bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% bg-[#D4C5A9] px-4 sm:px-6 pb-6 sm:pb-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-[#63510C] text-5xl sm:text-6xl md:text-[135.74px] lg:text-[235.74px] 2xl:text-[335.74px] font-bold font-sans">
+          <h2 className="text-[#63510C] text-5xl sm:text-6xl md:text-[135.74px] lg:text-[235.74px] 2xl:text-[335.74px] font-bold font-sans">
             fundora
-          </h1>
+          </h2>
         </div>
       </div>
     </footer>
