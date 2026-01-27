@@ -67,14 +67,14 @@ export default function Home() {
       <style dangerouslySetInnerHTML={{
         __html: `
         .home-hero-bg {
-          background-image: url('/images/home-hero-mb.png');
+          background-image: url('/images/home-hero-mb.avif');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         @media (min-width: 768px) {
           .home-hero-bg {
-            background-image: url('/images/home-hero-dk.png');
+            background-image: url('/images/home-hero-dk.avif');
             background-position: right;
           }
         }
