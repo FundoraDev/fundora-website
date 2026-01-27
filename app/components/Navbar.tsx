@@ -137,7 +137,7 @@ export default function Navbar() {
 
           {/* Buttons */}
           <Link
-            href="/login"
+            href="#"
             className="px-4 py-2 bg-black border border-yellow-500 text-white rounded-[36px] text-sm font-semibold hover:bg-gray-900 transition-colors"
           >
             <p className="bg-gradient-to-r from-[#C3A346] to-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent inline-block">
@@ -145,7 +145,7 @@ export default function Navbar() {
             </p>
           </Link>
           <Link
-            href="/signup"
+            href="#"
             className="px-4 py-2 bg-white border border-black text-black rounded-[36px] text-sm hover:bg-gray-100 transition-colors font-semibold"
           >
             Sign up
@@ -287,7 +287,7 @@ export default function Navbar() {
           {/* Mobile Buttons */}
           <div className="flex flex-col gap-4">
             <Link
-              href="/login"
+              href="#"
               onClick={() => {
                 setIsMenuOpen(false);
                 setIsLangDropdownOpen(false);
@@ -299,7 +299,7 @@ export default function Navbar() {
               </p>
             </Link>
             <Link
-              href="/signup"
+              href="#"
               onClick={() => {
                 setIsMenuOpen(false);
                 setIsLangDropdownOpen(false);
