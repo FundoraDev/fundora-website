@@ -94,14 +94,14 @@ export default function Home() {
           {/* Left copy */}
           <div className="flex-1 space-y-6">
             <h1 className="font-satoshi hidden md:block md:text-[54px] lg:text-[72px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px] font-extrabold">
-              Build. Grow. Protect
+              Build, Grow, Protect
               <br />
               Transfer Wealth
               <br />
               With Clarity.
             </h1>
             <h1 className="font-satoshi block md:hidden text-[40px] leading-tight sm:text-[40px] md:text-[48px] lg:text-[54px]  font-extrabold">
-              Build. Grow. Protect
+              Build, Grow, Protect
               <br />
               Transfer Wealth
               <br />
