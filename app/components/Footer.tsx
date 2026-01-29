@@ -18,7 +18,7 @@ export default function Footer() {
           </h2>
 
           <div className="font-satoshi flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <div className="h-[3px] md:h-[6px] w-5 sm:w-10 bg-white"></div>
+            {/* <div className="h-[3px] md:h-[6px] w-5 sm:w-10 bg-white"></div> */}
             <h2 className="text-[28px] md:text-[38px] lg:text-[48px] font-extrabold">
               The{" "}
               <span className="relative inline-flex items-center justify-center px-2 py-1">

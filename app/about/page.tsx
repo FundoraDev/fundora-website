@@ -67,7 +67,7 @@ export default function About() {
       id: "protection-matters",
       title: <p className="text-black text-[16px] md:text-[28px] font-extrabold font-satoshi">Protection Matters</p>,
       body: <p className="text-[#474D66] text-normal text-[14px] md:text-[22px]">
-        We plan for uncertainty—not <br /> just growth.
+        We plan for uncertainty, not <br /> just growth.
       </p>,
       icon: <ProtectionMattersIcon className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20" />
     },
@@ -331,7 +331,7 @@ export default function About() {
                 Dr. Seyi Abiodun is a financial strategist <br className="hidden md:block"/> with deep experience advising individuals, <br className="hidden md:block"/> families, and businesses on wealth <br className="hidden md:block"/> building, protection, and long-term <br className="hidden md:block"/> planning.
               </p>
               <p className="text-[16px] md:text-[24px] font-semibold">
-                He is known for his calm, structured <br className="hidden md:block"/> approach to finance—helping clients think <br className="hidden md:block"/> clearly, act wisely, and plan responsibly. At <br className="hidden md:block"/> Fundora, advice is never rushed. Clients are <br className="hidden md:block"/> guided—not pressured.
+                He is known for his calm, structured <br className="hidden md:block"/> approach to finance, helping clients think <br className="hidden md:block"/> clearly, act wisely, and plan responsibly. At <br className="hidden md:block"/> Fundora, advice is never rushed. Clients are <br className="hidden md:block"/> guided, not pressured.
               </p>
               </div>
             </div>
