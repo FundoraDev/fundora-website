@@ -408,7 +408,7 @@ export default function Home() {
               </div>
               <p className="hidden md:block text-[24px] font-semibold">Fundora is led by Dr. Seyi Abiodun, <br /> a seasoned financial professional <br /> committed to helping Africans build <br /> and protect wealth responsibly. <br /> You’re guided, not sold to.
               </p>
-              <p className="block md:hidden text-[16px] font-semibold">Fundora is led by Dr. Seyi Abiodun, a <br /> seasoned financial professionalcommitted <br />  to helping Africans build and protect wealth <br /> responsibly. You’re guided, not sold to.
+              <p className="block md:hidden text-[16px] font-semibold">Fundora is led by Dr. Seyi Abiodun, a <br /> seasoned financial professional committed <br />  to helping Africans build and protect wealth <br /> responsibly. You’re guided, not sold to.
               </p>
               <button className="bg-black text-[12px] rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
                 <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Meet Our Leadership</span>
