@@ -286,8 +286,8 @@ export default function Footer() {
             <p>
               <span className="font-bold">Futures and cleared swaps trading</span> is offered by Fundora Derivatives, LLC, a
               registered futures commission merchant with the Commodity Futures Trading Commission
-              (CFTC) and a Member of the National Futures Association (NFA). RHD is not FDIC insured or
-              SIPC protected.
+              (CFTC) and a Member of the National Futures Association (NFA). {/*RHD is not FDIC insured or
+              SIPC protected.*/}
             </p>
             <p>
               Funds held in your Fundora Cash Wallet account at Sutton Bank are eligible for FDIC
