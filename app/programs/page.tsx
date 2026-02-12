@@ -149,7 +149,7 @@ export default function Programs() {
                   Understand how to invest in <br /> stocks and fixed income <br /> instruments as a beginner
                 </p>
               </div>
-              <button className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black rounded-[36px] px-4 py-2 text-[11px] md:text-[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">Register for next cohort of FACAP</button>
+              <Link target="_blank" href="https://linktr.ee/seyideassistant?fbclid=PAVERFWAPpS3dleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacRZT4AQkSv2qgK3gwJQR0vCEwSwMLn3FWEKVGDPg2V8dUxHmKfY9rtngyQeg_aem_aC_OJPW_VJqV1_j5f5I16w" className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black rounded-[36px] px-4 py-2 text-[11px] md:text-[16px] font-bold py-[7.5px] md:py-[12px] px-[23.5px] md:px-[32px] ">Register for next cohort of FACAP</Link>
             </div>
           </div>
         </div>
