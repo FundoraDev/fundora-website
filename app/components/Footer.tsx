@@ -36,7 +36,8 @@ export default function Footer() {
           </p>
 
           <Link
-            href="#"
+            href="https://calendly.com/seyi-fundorahq/30min"
+            target="_blank"
             className="bg-linear-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100%bg-[#D4C5A9] rounded-[36px] inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 transition-colors text-[16px]"
           >
             Book a Consultation

@@ -98,7 +98,8 @@ export default function Programs() {
                 Start Your Wealth Journey
               </Link>
               <Link
-                href="#"
+                href="https://calendly.com/seyi-fundorahq/30min"
+                target="_blank"
                 className="sm:w-auto w-full text-center rounded-[36px] bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] px-6 py-3 text-sm font-semibold text-black shadow-md hover:brightness-110 transition"
               >
                 Book a Consultation
