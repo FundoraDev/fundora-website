@@ -395,7 +395,7 @@ export default function Home() {
             {/* Image first on small screens, second on md+ */}
             <div className="order-1 md:order-2">
               <Image
-                src="/images/seyi-abiodun.avif"
+                src="/images/seyi-abiodun-new.avif"
                 alt="Fundora leadership portrait"
                 width={672}
                 height={554}
