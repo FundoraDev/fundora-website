@@ -259,9 +259,9 @@ export default function Home() {
                 <li>Private Wealth Advisory</li>
                 <li>Business & Strategy Support</li>
               </ul>
-              <button className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
+              <Link href="https://calendly.com/seyi-fundorahq/30min" target="_blank" className="bg-black rounded-[36px] px-4 py-2 text-[16px] font-bold py-[12px] px-[32px]">
                 <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Speak With an Advisor</span>
-              </button>
+              </Link>
             </div>
             <div className="relative rounded-3xl bg-black overflow-hidden">
               <div
@@ -375,9 +375,11 @@ export default function Home() {
           </div>
 
           <div className="w-full flex flex-col items-start md:items-center justify-center">
-            <button className="bg-black rounded-[36px] font-bold py-[8.13px] md:py-[12px] px-[22.83px] md:px-[32px] text-[12px] md:text-[16px]">
+            <Link
+              href="https://calendly.com/seyi-fundorahq/30min"
+              target="_blank" className="bg-black rounded-[36px] font-bold py-[8.13px] md:py-[12px] px-[22.83px] md:px-[32px] text-[12px] md:text-[16px]">
               <span className="bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">Speak With an Advisor</span>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
