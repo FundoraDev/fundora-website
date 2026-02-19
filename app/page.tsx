@@ -188,7 +188,7 @@ export default function Home() {
                 <div className="space-y-2">
                   {item.body}
                 </div>
-                <button className={`w-auto rounded-[999px] px-4 py-[8px] md:py-[12px] text-[11px] md:text-[16px] font-bold ${item.id === "gold" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black text-white" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black"}`}>Book a Consultation</button>
+                <Link href="https://calendly.com/seyi-fundorahq/30min" target="_blank" className={`w-auto rounded-[999px] px-4 py-[8px] md:py-[12px] text-[11px] md:text-[16px] font-bold ${item.id === "gold" ? "bg-gradient-to-b from-[#111111] via-[#272727] to-black text-white" : "bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] text-black"}`}>Book a Consultation</Link>
               </div>
             ))}
           </div>
