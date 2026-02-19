@@ -261,6 +261,8 @@ export default function Footer() {
           </div>
 
           <div className="text-sm md:text-[16px] leading-relaxed space-y-2.5 sm:space-y-3 font-light text-black">
+            <p>
+              Fundora is a technology-led digital investment marketplace designed for Nigerians at home and in the diaspora. We help users discover, compare, and access licensed financial products such as investments and insurance through regulated partner institutions. Fundora powers digital onboarding, wallet orchestration (ledger-only), transaction routing, and consolidated portfolio reporting, while all client funds are securely held and managed by approved custodians and providers. Fundora does not act as an asset manager, broker, or custodian.</p>
             {/* <p className="font-bold">
               All investing involves risk.
             </p>
