@@ -62,6 +62,16 @@ export default function About() {
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
         }
+        @keyframes redefine-float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-12px); }
+        }
+        .redefine-decor {
+          transition: transform 0.4s ease;
+        }
+        .redefine-decor:hover {
+          animation: redefine-float 3.5s ease-in-out infinite;
+        }
       `}} />
       {/* Hero Section */}
       <section
@@ -114,7 +124,7 @@ export default function About() {
       <section
         className="relative overflow-hidden bg-[#F5F5F5] text-black"
       >
-        <div className="pointer-events-none absolute bottom-0 left-0 z-0 hidden h-[170px] w-[240px] md:block lg:h-[220px] lg:w-[300px]">
+        <div className="redefine-decor absolute bottom-0 left-0 z-20 hidden h-[170px] w-[240px] md:block lg:h-[220px] lg:w-[300px]">
           <Image
             src="/images/redefine-car.avif"
             alt=""
@@ -124,7 +134,7 @@ export default function About() {
             sizes="(max-width: 1024px) 240px, 300px"
           />
         </div>
-        <div className="pointer-events-none absolute top-0 right-0 z-0 hidden h-[170px] w-[240px] md:block lg:h-[220px] lg:w-[300px]">
+        <div className="redefine-decor absolute top-0 right-0 z-20 hidden h-[170px] w-[240px] md:block lg:h-[220px] lg:w-[300px]">
           <Image
             src="/images/redefine-umbrella.avif"
             alt=""
