@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import InsuranceImageShuffler from "../components/InsuranceImageShuffler";
 import { AndMoreInsurance, ChoosePWAIcon, GoldBrushSwipe2, GoodAdviceIcon, LifeInsurance, LongTermIcon, LongTermPerspectiveIcon, LongTermThinkingIcon, MotorInsuranceIcon, MultiGenerationalIcon, ProtectionMattersIcon, StructureAlwaysIcon, TravelInsurance, WealthIsBuiltIcon, WorldClassIcon } from "../components/svg";
 
 export default function About() {
@@ -182,16 +183,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-1 md:order-1 flex flex-row justify-center items-center md:justify-end h-full w-full rounded-[16px] md:rounded-[30px] overflow-hidden">
-              <div className="relative w-full h-full min-h-[480px] md:min-h-[500px]">
-                <Image
-                  alt="our-advisory-approach"
-                  src="/images/about-hww.avif"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                  priority
-                />
-              </div>
+              <InsuranceImageShuffler />
             </div>
           </div>
         </div>
