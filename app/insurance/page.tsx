@@ -45,14 +45,14 @@ export default function About() {
       <style dangerouslySetInnerHTML={{
         __html: `
         .home-hero-bg {
-          background-image: url('/images/protect-hero-mb.avif');
+          background-image: url('/images/insurance-hero-sm.avif');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         @media (min-width: 768px) {
           .home-hero-bg {
-            background-image: url('/images/protect-hero-dk.avif');
+            background-image: url('/images/insurance-hero-sm.avif');
             background-position: right;
           }
         }
