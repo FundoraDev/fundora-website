@@ -242,6 +242,14 @@ export default function Footer() {
               <ul className="space-y-1.5 sm:space-y-2 font-normal">
                 <li>
                   <Link
+                    href="/policy"
+                    className="hover:underline transition-colors"
+                  >
+                    Information Security Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="#"
                     className="hover:underline transition-colors"
                   >
