@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+
+const AUTO_ADVANCE_MS = 4000;
 
 const images = [
   { src: "/images/insurance-redefine-0.avif", alt: "Motor insurance coverage" },
@@ -12,6 +14,14 @@ const images = [
 
 export default function InsuranceImageShuffler() {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, AUTO_ADVANCE_MS);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative flex h-full min-h-[480px] w-full items-center justify-center md:min-h-[500px]">
