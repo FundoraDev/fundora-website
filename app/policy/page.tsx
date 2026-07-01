@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import LegalPageLayout, { LegalSection } from "../components/LegalPageLayout";
 
 export const metadata: Metadata = {
   title: "Fundora - Information Security Policy",
@@ -311,64 +312,11 @@ const sections = [
 
 export default function PolicyPage() {
   return (
-    <main className="min-h-screen bg-[#F5F5F5] text-black">
-      <section className="border-b border-[#E4E7EC] bg-white">
-        <div className="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
-          <p className="text-sm font-medium uppercase tracking-wide text-[#808080]">
-            Fundora Technologies Ltd
-          </p>
-          <h1 className="font-satoshi mt-3 text-[32px] font-extrabold leading-tight md:text-[48px]">
-            Information Security Policy
-          </h1>
-          <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#474D66] md:text-base">
-            <span>
-              <span className="font-semibold text-black">Effective Date:</span>{" "}
-              29th June 2026
-            </span>
-            <span>
-              <span className="font-semibold text-black">Version:</span> 1.0
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-4 py-10 md:px-6 md:py-14">
-        <nav
-          aria-label="Policy sections"
-          className="mb-10 rounded-[16px] border border-[#E4E7EC] bg-white p-5 md:p-6"
-        >
-          <h2 className="font-satoshi text-lg font-bold md:text-xl">Contents</h2>
-          <ol className="mt-4 grid gap-2 text-sm text-[#474D66] md:grid-cols-2 md:text-base">
-            {sections.map((section) => (
-              <li key={section.id}>
-                <a
-                  href={`#${section.id}`}
-                  className="transition-colors hover:text-black hover:underline"
-                >
-                  {section.title}
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-
-        <div className="space-y-10 md:space-y-12">
-          {sections.map((section) => (
-            <article
-              key={section.id}
-              id={section.id}
-              className="scroll-mt-28 rounded-[16px] border border-[#E4E7EC] bg-white p-5 md:p-8"
-            >
-              <h2 className="font-satoshi text-xl font-extrabold md:text-2xl">
-                {section.title}
-              </h2>
-              <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-[#474D66] md:text-[17px]">
-                {section.content}
-              </div>
-            </article>
-          ))}
-        </div>
-
+    <LegalPageLayout
+      title="Information Security Policy"
+      sections={sections}
+      showVersion
+      footer={
         <div className="mt-10 rounded-[16px] border border-[#E4E7EC] bg-white p-5 md:mt-12 md:p-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#808080]">
             Approved by
@@ -378,7 +326,7 @@ export default function PolicyPage() {
           </p>
           <p className="mt-1 text-[#474D66]">Fundora Technologies Ltd</p>
         </div>
-      </section>
-    </main>
+      }
+    />
   );
 }
