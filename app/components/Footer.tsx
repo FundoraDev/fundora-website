@@ -250,7 +250,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/terms"
                     className="hover:underline transition-colors"
                   >
                     Terms & Conditions
@@ -258,10 +258,18 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/disclosures"
                     className="hover:underline transition-colors"
                   >
                     Disclosures
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/privacy"
+                    className="hover:underline transition-colors"
+                  >
+                    Privacy Policy
                   </Link>
                 </li>
               </ul>
