@@ -170,8 +170,73 @@ const sections: LegalSection[] = [
     ),
   },
   {
+    id: "account-deletion",
+    title: "8. Deleting Your Account",
+    content: (
+      <>
+        <h3 className="font-semibold text-black">How to delete your account</h3>
+        <p className="mt-2">Account deletion is available in-app to signed-in users:</p>
+        <ol className="mt-3 list-decimal space-y-2 pl-5">
+          <li>
+            Open the Fundora app and go to <strong>Settings → Delete Account</strong>.
+          </li>
+          <li>
+            Review the warning screen, which explains that deletion is permanent, that you will
+            lose access to your wallet, investments and portfolio history, and that you should
+            withdraw your wallet balance and exit your investments first. Tap{" "}
+            <strong>Continue</strong>.
+          </li>
+          <li>
+            We email a 6-digit verification code to the address on your account. Enter the code,
+            type <strong>DELETE</strong> into the confirmation field, and tap{" "}
+            <strong>Delete my account</strong>. If you do not receive a code, you can request a
+            new one after 30 seconds.
+          </li>
+        </ol>
+        <p className="mt-4">
+          Verifying the code deletes your account immediately — there is no grace period and no
+          way to restore it afterwards. You will be signed out automatically.
+        </p>
+
+        <h3 className="mt-6 font-semibold text-black">Before you delete</h3>
+        <p className="mt-2">
+          Deleting your account does not withdraw your wallet balance or exit your investments for
+          you. Please withdraw any wallet balance and exit your active investments before you
+          delete your account.
+        </p>
+
+        <h3 className="mt-6 font-semibold text-black">What is deleted</h3>
+        <p className="mt-2">
+          Deleting your account removes your profile, personal and KYC information, wallet, and
+          investment and portfolio history, and you lose access to these immediately.
+        </p>
+
+        <h3 className="mt-6 font-semibold text-black">What we retain, and why</h3>
+        <p className="mt-2">
+          We are required to retain certain transaction, KYC and anti-money-laundering records to
+          comply with applicable financial services and AML regulations. These records are
+          retained for{" "}
+          <strong>[TODO: insert statutory retention period and governing regulation]</strong>,
+          after which they are deleted or anonymised.
+        </p>
+
+        <h3 className="mt-6 font-semibold text-black">Timing</h3>
+        <p className="mt-2">
+          Deletion of your account and access to it is immediate and irreversible. Regulated
+          records we are required to keep follow the retention period described above.
+        </p>
+
+        <h3 className="mt-6 font-semibold text-black">Can&apos;t access the app?</h3>
+        <p className="mt-2">
+          If you cannot access the app, you can request account deletion by emailing{" "}
+          <strong>[TODO: insert support/privacy email address]</strong>.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "cookies",
-    title: "8. Cookies and Technologies",
+    title: "9. Cookies and Technologies",
     content: (
       <>
         <p>Fundora may use cookies and similar technologies to:</p>
@@ -186,7 +251,7 @@ const sections: LegalSection[] = [
   },
   {
     id: "international-transfers",
-    title: "9. International Data Transfers",
+    title: "10. International Data Transfers",
     content: (
       <p>
         Where customer information is transferred across jurisdictions, Fundora will take reasonable
@@ -196,7 +261,7 @@ const sections: LegalSection[] = [
   },
   {
     id: "childrens-privacy",
-    title: "10. Children's Privacy",
+    title: "11. Children's Privacy",
     content: (
       <>
         <p>
@@ -212,7 +277,7 @@ const sections: LegalSection[] = [
   },
   {
     id: "changes",
-    title: "11. Changes to This Privacy Policy",
+    title: "12. Changes to This Privacy Policy",
     content: (
       <>
         <p>Fundora may update this Privacy Policy periodically.</p>
@@ -222,7 +287,7 @@ const sections: LegalSection[] = [
   },
   {
     id: "contact",
-    title: "12. Contact Us",
+    title: "13. Contact Us",
     content: <p>For privacy-related enquiries:</p>,
   },
 ];
