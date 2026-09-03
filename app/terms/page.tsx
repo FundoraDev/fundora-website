@@ -207,6 +207,13 @@ const sections: LegalSection[] = [
           <li>security risks arise;</li>
           <li>regulatory requirements demand such action.</li>
         </ol>
+        <p className="mt-4">
+          You may also delete your own account at any time from within the app. See{" "}
+          <a href="/privacy#account-deletion" className="font-semibold text-black underline">
+            Deleting Your Account
+          </a>{" "}
+          in our Privacy Policy for how this works and what happens to your data.
+        </p>
       </>
     ),
   },
