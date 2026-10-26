@@ -147,7 +147,7 @@ const de: LegalDocuments = {
           { h: "Zeitpunkt" },
           { p: "Die Löschung Ihres Kontos und des Zugriffs darauf erfolgt sofort und unwiderruflich. Für regulierte Unterlagen, die wir aufbewahren müssen, gilt die oben beschriebene Aufbewahrungsfrist." },
           { h: "Kein Zugriff auf die App?" },
-          { p: "Wenn Sie nicht auf die App zugreifen können, können Sie die Löschung Ihres Kontos per E-Mail an **[TODO: insert support/privacy email address]** beantragen." },
+          { p: "Wenn Sie nicht auf die App zugreifen können, können Sie die Löschung Ihres Kontos per E-Mail an **customersuccess@fundorahq.com** beantragen." },
         ],
       },
       {

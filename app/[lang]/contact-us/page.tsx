@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { HiOutlineCalendarDays, HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { HiOutlineCalendarDays, HiOutlineDevicePhoneMobile, HiOutlineEnvelope, HiOutlineMapPin, HiOutlinePhone } from "react-icons/hi2";
 import Link from "next/link";
 import { AppDownloadButton } from "../../components/AppDownload";
+import { CONTACT } from "../../components/siteLinks";
 import { buttonDark, buttonGold, CALENDLY_URL, container, GoldText } from "../../components/ui";
 import { localizePath } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -55,6 +56,36 @@ export default async function ContactUs({ params }: LangParams) {
             </AppDownloadButton>
           </li>
         </ul>
+
+        <div data-reveal className="mt-4 rounded-3xl bg-white p-5 sm:p-8 md:mt-6 lg:p-10">
+          <h2 className="font-satoshi text-xl font-extrabold sm:text-2xl">{t.directTitle}</h2>
+          <dl className="mt-5 grid gap-5 sm:grid-cols-3">
+            {[
+              { icon: HiOutlineEnvelope, label: t.emailLabel, value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+              { icon: HiOutlinePhone, label: t.phoneLabel, value: CONTACT.phone, href: `tel:${CONTACT.phoneE164}` },
+              { icon: HiOutlineMapPin, label: t.officeLabel, value: CONTACT.address },
+            ].map(({ icon: Icon, label, value, href }) => (
+              <div key={label} className="flex items-start gap-3">
+                <Icon aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 text-[#C3A346]" />
+                <div className="min-w-0">
+                  <dt className="text-sm font-semibold text-[#696F8C]">{label}</dt>
+                  <dd className="mt-1 text-base">
+                    {href ? (
+                      // One unbroken line, slightly smaller on the narrowest phones so the
+                      // email address always fits; 44px tall so it's easy to tap.
+                      <a href={href} className="inline-flex min-h-11 items-center text-sm font-semibold whitespace-nowrap text-black underline-offset-4 hover:underline min-[375px]:text-base">
+                        {value}
+                      </a>
+                    ) : (
+                      <address className="pt-2.5 not-italic">{value}</address>
+                    )}
+                  </dd>
+                </div>
+              </div>
+            ))}
+          </dl>
+        </div>
+
         <p data-reveal className="mt-8 text-center text-base text-[#474D66] sm:text-lg">
           {t.faqPrompt}{" "}
           <Link href={localizePath(lang, "/faq")} className="font-semibold text-black underline underline-offset-4 hover:no-underline">

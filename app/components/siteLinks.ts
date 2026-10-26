@@ -29,3 +29,13 @@ export const REGULATORY_LINKS: Record<"customerSummaries" | "brokerCheck", strin
   customerSummaries: null,
   brokerCheck: null,
 };
+
+// Fundora's customer contact details, used on the Contact page and in the
+// legal documents.
+export const CONTACT = {
+  email: "customersuccess@fundorahq.com",
+  phone: "0809 518 7945",
+  // The same number in international format, for tap-to-call links.
+  phoneE164: "+2348095187945",
+  address: "2nd Floor, Nzube Shopping Complex, Nzube Estate, Lokogoma, Abuja FCT",
+};
