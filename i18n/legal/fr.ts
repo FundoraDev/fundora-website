@@ -148,7 +148,7 @@ const fr: LegalDocuments = {
           { h: "Délais" },
           { p: "La suppression de votre compte et de l’accès à celui-ci est immédiate et irréversible. Les registres réglementés que nous sommes tenus de conserver suivent la durée de conservation décrite ci-dessus." },
           { h: "Vous ne pouvez pas accéder à l’application ?" },
-          { p: "Si vous ne pouvez pas accéder à l’application, vous pouvez demander la suppression de votre compte en écrivant à **[TODO: insert support/privacy email address]**." },
+          { p: "Si vous ne pouvez pas accéder à l’application, vous pouvez demander la suppression de votre compte en écrivant à **customersuccess@fundorahq.com**." },
         ],
       },
       {

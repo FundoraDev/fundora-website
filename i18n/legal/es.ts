@@ -147,7 +147,7 @@ const es: LegalDocuments = {
           { h: "Plazos" },
           { p: "La eliminación de su cuenta y del acceso a ella es inmediata e irreversible. Los registros regulados que estamos obligados a conservar siguen el periodo de conservación descrito anteriormente." },
           { h: "¿No puede acceder a la app?" },
-          { p: "Si no puede acceder a la app, puede solicitar la eliminación de su cuenta escribiendo a **[TODO: insert support/privacy email address]**." },
+          { p: "Si no puede acceder a la app, puede solicitar la eliminación de su cuenta escribiendo a **customersuccess@fundorahq.com**." },
         ],
       },
       {

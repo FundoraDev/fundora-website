@@ -7,7 +7,8 @@ export function format(text: string, values: Record<string, string>): string {
 }
 
 // Renders the little markup translations are allowed to carry:
-// **bold** and [link text](/site/path). Site links are localized.
+// **bold** and [link text](/site/path). Site links are localized, and a
+// bold email address becomes a mailto link.
 export function rich(text: string, locale: Locale): ReactNode {
   const parts: ReactNode[] = [];
   const pattern = /\*\*(.+?)\*\*|\[(.+?)\]\((\/[^)\s]*)\)/g;
@@ -15,7 +16,14 @@ export function rich(text: string, locale: Locale): ReactNode {
   let match: RegExpExecArray | null;
   while ((match = pattern.exec(text))) {
     if (match.index > last) parts.push(text.slice(last, match.index));
-    if (match[1] !== undefined) {
+    if (match[1] !== undefined && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(match[1])) {
+      // A bold email address becomes a mailto link that never splits across lines.
+      parts.push(
+        <a key={match.index} href={`mailto:${match[1]}`} className="font-semibold whitespace-nowrap text-black underline underline-offset-2 hover:no-underline">
+          {match[1]}
+        </a>,
+      );
+    } else if (match[1] !== undefined) {
       parts.push(<strong key={match.index} className="font-semibold text-inherit">{match[1]}</strong>);
     } else {
       parts.push(
