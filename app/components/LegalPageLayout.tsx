@@ -2,15 +2,11 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/en";
 import type { LegalDocument, LegalDocumentKey } from "@/i18n/legal/en";
 import { format, rich } from "@/i18n/rich";
+import { CONTACT as LEGAL_CONTACT } from "./siteLinks";
 
 export const LEGAL_EFFECTIVE_DATE = "2026-06-29";
 export const LEGAL_VERSION = "1.0";
 
-export const LEGAL_CONTACT = {
-  email: "[Insert Email]",
-  address: "[Insert Address]",
-  phone: "[Insert Phone number]",
-};
 
 const legalPaths: Record<LegalDocumentKey, string> = {
   privacy: "/privacy",
@@ -133,13 +129,19 @@ export default function LegalPageLayout({ kind, doc, lang, labels }: LegalPageLa
             <p className="font-satoshi mt-2 text-lg font-bold md:text-xl">{labels.company}</p>
             <div className="mt-3 space-y-1 break-words text-[#474D66]">
               <p>
-                <span className="font-semibold text-black">{labels.email}</span> {LEGAL_CONTACT.email}
+                <span className="font-semibold text-black">{labels.email}</span>{" "}
+                <a href={`mailto:${LEGAL_CONTACT.email}`} className="whitespace-nowrap underline underline-offset-2 hover:no-underline">
+                  {LEGAL_CONTACT.email}
+                </a>
               </p>
               <p>
                 <span className="font-semibold text-black">{labels.address}</span> {LEGAL_CONTACT.address}
               </p>
               <p>
-                <span className="font-semibold text-black">{labels.phone}</span> {LEGAL_CONTACT.phone}
+                <span className="font-semibold text-black">{labels.phone}</span>{" "}
+                <a href={`tel:${LEGAL_CONTACT.phoneE164}`} className="whitespace-nowrap underline underline-offset-2 hover:no-underline">
+                  {LEGAL_CONTACT.phone}
+                </a>
               </p>
             </div>
           </div>

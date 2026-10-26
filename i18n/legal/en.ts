@@ -150,7 +150,7 @@ const privacy = {
         { h: "Timing" },
         { p: "Deletion of your account and access to it is immediate and irreversible. Regulated records we are required to keep follow the retention period described above." },
         { h: "Can't access the app?" },
-        { p: "If you cannot access the app, you can request account deletion by emailing **[TODO: insert support/privacy email address]**." },
+        { p: "If you cannot access the app, you can request account deletion by emailing **customersuccess@fundorahq.com**." },
       ],
     },
     {
