@@ -3,311 +3,167 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { HiOutlineGlobeEuropeAfrica } from "react-icons/hi2";
+import { useEffect, useState } from "react";
+import { localizePath, stripLocale, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries/en";
+import { AppDownloadButton } from "./AppDownload";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Navbar() {
-  const pathname = usePathname();
+type NavbarProps = {
+  lang: Locale;
+  labels: Dictionary["nav"] & { logIn: string; getTheApp: string };
+};
+
+const activeGradient = {
+  backgroundImage: "linear-gradient(to right, #C3A346 0%, #FEEF9C 50%, #C7AB4F 100%)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+} as const;
+
+export default function Navbar({ lang, labels }: NavbarProps) {
+  const pathname = stripLocale(usePathname() ?? "/");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState("US");
-
-  const languages = [
-    { code: "US", label: "English (US)" },
-    { code: "GB", label: "English (UK)" },
-    { code: "ES", label: "Español" },
-    { code: "FR", label: "Français" },
-    { code: "DE", label: "Deutsch" },
-  ];
 
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/invest", label: "Invest" },
-    { href: "/insurance", label: "Insurance" },
-    { href: "/programs", label: "Programs" },
-    { href: "/contact-us", label: "Contact Us" },
+    { href: "/about", label: labels.about },
+    { href: "/invest", label: labels.invest },
+    { href: "/insurance", label: labels.insurance },
+    { href: "/programs", label: labels.programs },
+    { href: "/contact-us", label: labels.contact },
   ];
 
-  const isActive = (href: string) => {
-    if (!pathname) return false;
-    if (href === "/") {
-      return pathname === "/";
-    }
-    return pathname.startsWith(href);
-  };
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  // While the menu is open: lock page scroll and let Escape close it.
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    document.body.dataset.menuOpen = "";
+    const onKeyDown = (e: KeyboardEvent) => e.key === "Escape" && setIsMenuOpen(false);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      delete document.body.dataset.menuOpen;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#000000] h-[68px] text-white px-4 md:px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <Image alt="Fundora Logo" src="/fundora.png" width={30} height={30} />
-          <span className="text-white text-[22px] font-bold font-sans">
-            fundora
-          </span>
+      <nav
+        aria-label={labels.main}
+        className="fixed top-0 right-0 left-0 z-[100] flex h-[68px] items-center justify-between bg-black px-4 text-white sm:px-6"
+      >
+        <Link href={localizePath(lang, "/")} aria-label={labels.home} className="flex min-h-11 items-center gap-2" onClick={closeMenu}>
+          <Image alt="" src="/fundora.png" width={30} height={30} />
+          <span className="font-sans text-[22px] font-bold text-white">fundora</span>
         </Link>
 
-        {/* Desktop Navigation Links - Hidden on mobile/tablet */}
-        <div className="hidden lg:flex items-center gap-8">
+        <ul className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => {
             const active = isActive(link.href);
             return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${
-                  active
-                    ? "bg-clip-text text-transparent transition-all"
-                    : "text-white hover:text-gray-300 transition-colors"
-                } text-[16px] font-medium`}
-                style={
-                  active
-                    ? {
-                        backgroundImage:
-                          "linear-gradient(to right, rgba(249, 115, 22, 0.52) 0%, rgba(234, 179, 8, 0.8) 50%, rgba(234, 179, 8, 0.55) 100%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                        backgroundClip: "text",
-                      }
-                    : undefined
-                }
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* Desktop Right Side - Hidden on mobile/tablet */}
-        <div className="hidden lg:flex items-center gap-[10px]">
-          {/* Desktop Language Selector */}
-          <div className="relative">
-            <button
-              onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-              className="flex items-center gap-2 cursor-pointer hover:text-gray-300 transition-colors"
-            >
-              <HiOutlineGlobeEuropeAfrica className="h-5 w-5" />
-              <span className="text-sm">{selectedLang}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${
-                  isLangDropdownOpen ? "rotate-180" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-
-            {/* Desktop Language Dropdown */}
-            {isLangDropdownOpen && (
-              <>
-                <div
-                  className="fixed inset-0 z-10"
-                  onClick={() => setIsLangDropdownOpen(false)}
-                />
-                <div className="absolute right-0 mt-2 w-48 bg-[#1a1a1a] border border-gray-800 rounded-lg shadow-lg z-20">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setSelectedLang(lang.code);
-                        setIsLangDropdownOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-800 transition-colors ${
-                        selectedLang === lang.code
-                          ? "text-yellow-500"
-                          : "text-white"
-                      }`}
-                    >
-                      {lang.label}
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-
-          {/* Buttons */}
-          <Link
-            href="#"
-            className="px-4 py-2 bg-black border border-yellow-500 text-white rounded-[36px] text-sm font-semibold hover:bg-gray-900 transition-colors"
-          >
-            <p className="bg-gradient-to-r from-[#C3A346] to-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent inline-block">
-              Log in
-            </p>
-          </Link>
-          <Link
-            href="#"
-            className="px-4 py-2 bg-white border border-black text-black rounded-[36px] text-sm hover:bg-gray-100 transition-colors font-semibold"
-          >
-            Sign up
-          </Link>
-        </div>
-
-        {/* Hamburger Menu Button - Visible on mobile/tablet */}
-        <button
-          onClick={() => {
-            setIsMenuOpen(!isMenuOpen);
-            if (isMenuOpen) setIsLangDropdownOpen(false);
-          }}
-          className="lg:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isMenuOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isMenuOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
-        </button>
-      </nav>
-
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div
-          className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-50"
-          onClick={() => {
-            setIsMenuOpen(false);
-            setIsLangDropdownOpen(false);
-          }}
-        />
-      )}
-
-      {/* Mobile Menu Drawer */}
-      <div
-        className={`lg:hidden fixed top-[68px] right-0 z-40 h-[calc(100vh-68px)] w-full max-w-sm bg-[#000000] transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex flex-col h-full p-6 overflow-y-auto">
-          {/* Mobile Navigation Links */}
-          <div className="flex flex-col gap-6 mb-8">
-            {navLinks.map((link) => {
-              const active = isActive(link.href);
-              return (
+              <li key={link.href}>
                 <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsLangDropdownOpen(false);
-                  }}
-                  className={`${
-                    active
-                      ? "bg-clip-text text-transparent transition-all"
-                      : "text-white hover:text-gray-300 transition-colors"
-                  } text-[18px] font-light py-2`}
-                  style={
-                    active
-                      ? {
-                          backgroundImage:
-                            "linear-gradient(to right, #C3A346 0%, #FEEF9C 50%, #C7AB4F 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                          backgroundClip: "text",
-                        }
-                      : undefined
-                  }
+                  href={localizePath(lang, link.href)}
+                  aria-current={active ? "page" : undefined}
+                  className={`text-base font-medium ${active ? "transition-all" : "text-white transition-colors hover:text-gray-300"}`}
+                  style={active ? activeGradient : undefined}
                 >
                   {link.label}
                 </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+        <div className="hidden items-center gap-2.5 lg:flex">
+          <LanguageSwitcher lang={lang} labels={labels} variant="dropdown" />
+          <AppDownloadButton
+            placement="navbar"
+            className="min-h-10 rounded-full border border-yellow-500 bg-black px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-900"
+          >
+            <span className="inline-block bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] bg-clip-text text-transparent">
+              {labels.logIn}
+            </span>
+          </AppDownloadButton>
+          <AppDownloadButton
+            placement="navbar"
+            className="min-h-10 rounded-full border border-black bg-white px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-gray-100"
+          >
+            {labels.getTheApp}
+          </AppDownloadButton>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setIsMenuOpen((open) => !open)}
+          className="-mr-2 flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5 lg:hidden"
+          aria-label={isMenuOpen ? labels.closeMenu : labels.openMenu}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
+        >
+          <span className={`block h-0.5 w-6 bg-white transition-all duration-300 ${isMenuOpen ? "translate-y-2 rotate-45" : ""}`} />
+          <span className={`block h-0.5 w-6 bg-white transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`} />
+          <span className={`block h-0.5 w-6 bg-white transition-all duration-300 ${isMenuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      <div
+        aria-hidden="true"
+        onClick={closeMenu}
+        className={`fixed inset-0 top-[68px] z-40 bg-black/50 transition-opacity duration-300 lg:hidden ${
+          isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
+      <div
+        id="mobile-menu"
+        // Off-screen and unreachable (by keyboard or screen reader) while closed.
+        inert={!isMenuOpen}
+        className={`fixed top-[68px] right-0 z-40 h-[calc(100dvh-68px)] w-full max-w-sm transform bg-black text-white transition-transform duration-300 ease-in-out lg:hidden ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex h-full flex-col overflow-y-auto overscroll-contain p-6">
+          <ul className="mb-6 flex flex-col">
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={localizePath(lang, link.href)}
+                    onClick={closeMenu}
+                    aria-current={active ? "page" : undefined}
+                    className={`flex min-h-12 items-center text-lg font-light ${active ? "transition-all" : "text-white transition-colors hover:text-gray-300"}`}
+                    style={active ? activeGradient : undefined}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
               );
             })}
+          </ul>
+
+          <div className="mb-6 border-b border-gray-800 pb-6">
+            <LanguageSwitcher lang={lang} labels={labels} variant="list" />
           </div>
 
-          {/* Mobile Language Selector */}
-          <div className="mb-6 pb-6 border-b border-gray-800">
-            <button
-              onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-              className="flex items-center gap-2 cursor-pointer hover:text-gray-300 transition-colors w-full"
+          <div className="flex flex-col gap-3">
+            <AppDownloadButton
+              placement="navbar"
+              onClick={closeMenu}
+              className="min-h-12 rounded-full bg-gradient-to-r from-[#C3A346] via-[#FEEF9C] to-[#C7AB4F] px-4 py-3 text-center text-[15px] font-semibold text-black"
             >
-              <HiOutlineGlobeEuropeAfrica className="h-5 w-5" />
-              <span className="text-sm flex-1 text-left">
-                {languages.find((l) => l.code === selectedLang)?.label ||
-                  selectedLang}
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${
-                  isLangDropdownOpen ? "rotate-180" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-
-            {/* Mobile Language Dropdown */}
-            {isLangDropdownOpen && (
-              <div className="mt-3 space-y-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => {
-                      setSelectedLang(lang.code);
-                      setIsLangDropdownOpen(false);
-                    }}
-                    className={`w-full text-left px-4 py-2 text-sm rounded-lg hover:bg-gray-800 transition-colors ${
-                      selectedLang === lang.code
-                        ? "text-yellow-500 bg-gray-900"
-                        : "text-white"
-                    }`}
-                  >
-                    {lang.label}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Mobile Buttons */}
-          <div className="flex flex-col gap-4">
-            <Link
-              href="#"
-              onClick={() => {
-                setIsMenuOpen(false);
-                setIsLangDropdownOpen(false);
-              }}
-              className="bg-gradient-to-r from-[#C3A346] from-0% via-[#FEEF9C] via-50% to-[#C7AB4F] to-100% px-4 py-2 bg-black border border-yellow-500 text-black rounded-[36px] text-sm font-semibold hover:bg-gray-900 transition-colors text-center"
+              {labels.logIn}
+            </AppDownloadButton>
+            <AppDownloadButton
+              placement="navbar"
+              onClick={closeMenu}
+              className="min-h-12 rounded-full border border-black bg-white px-4 py-3 text-center text-[15px] font-semibold text-black transition-colors hover:bg-gray-100"
             >
-              <p>
-                Log in
-              </p>
-            </Link>
-            <Link
-              href="#"
-              onClick={() => {
-                setIsMenuOpen(false);
-                setIsLangDropdownOpen(false);
-              }}
-              className="px-4 py-2 bg-white border border-black text-black rounded-[36px] text-sm hover:bg-gray-100 transition-colors font-semibold text-center"
-            >
-              Sign up
-            </Link>
+              {labels.getTheApp}
+            </AppDownloadButton>
           </div>
         </div>
       </div>

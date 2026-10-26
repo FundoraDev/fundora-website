@@ -1,0 +1,372 @@
+import type { Dictionary } from "./en";
+
+const es: Dictionary = {
+  meta: {
+    siteName: "Fundora",
+    siteDescription: "Construya. Haga crecer. Proteja. Transmita su patrimonio con claridad.",
+    home: { title: "Fundora", description: "Construya. Haga crecer. Proteja. Transmita su patrimonio con claridad." },
+    about: { title: "Quiénes somos | Fundora", description: "Fundora está formando la próxima generación de familias prósperas de África." },
+    invest: { title: "Invertir | Fundora", description: "Invierta su patrimonio con Fundora." },
+    protect: { title: "Proteger | Fundora", description: "Proteja su patrimonio con Fundora." },
+    insurance: { title: "Seguros | Fundora", description: "Protección superior, ofrecida con confianza." },
+    programs: { title: "Programas | Fundora", description: "Explore nuestros programas y encuentre el adecuado para usted." },
+    download: {
+      title: "Descargar la app | Fundora",
+      description: "Descargue la app de Fundora para abrir su cuenta, invertir y gestionar sus seguros desde el móvil.",
+    },
+    contact: { title: "Contacto | Fundora", description: "Contáctenos para obtener más información." },
+    faq: { title: "Preguntas frecuentes | Fundora", description: "Respuestas a las preguntas más habituales sobre Fundora, la app, la inversión, los seguros, nuestros programas y la seguridad de su cuenta." },
+    notFound: { title: "404 | Página no encontrada", description: "No se pudo encontrar esta página." },
+  },
+
+  common: {
+    startJourney: "Comience su camino hacia el patrimonio",
+    bookConsultation: "Reservar una consulta",
+    speakWithAdvisor: "Hablar con un asesor",
+    getTheApp: "Descargar la app",
+    logIn: "Iniciar sesión",
+    newTab: "se abre en una pestaña nueva",
+  },
+
+  nav: {
+    home: "Inicio de Fundora",
+    main: "Principal",
+    about: "Quiénes somos",
+    invest: "Invertir",
+    insurance: "Seguros",
+    programs: "Programas",
+    contact: "Contacto",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
+    language: "Idioma",
+    changeLanguage: "Cambiar idioma. Idioma actual: {language}",
+  },
+
+  footer: {
+    ctaTitle: "Construyamos su futuro financiero",
+    ctaHighlight: { before: "de la", highlight: "forma correcta", after: "" },
+    ctaBody: "Tanto si está empezando como si está perfeccionando una estrategia existente, Fundora le ayuda a avanzar con confianza.",
+    customerSummaries: "Resúmenes de la relación con el cliente",
+    brokerCheck: "BrokerCheck de FINRA",
+    followUs: "Síganos en",
+    productTitle: "Productos",
+    product: {
+      mutualFunds: "Fondos de inversión",
+      stocks: "Acciones",
+      fixedIncome: "Renta fija",
+      alternatives: "Inversiones alternativas",
+      retirement: "Jubilación",
+      life: "Seguro de vida",
+      incomeProtection: "Protección de ingresos",
+      assetCoverage: "Cobertura de activos y empresas",
+    },
+    companyTitle: "Empresa",
+    company: {
+      about: "Quiénes somos",
+      faq: "Preguntas frecuentes",
+      blog: "Blog",
+      partner: "Colabore con nosotros",
+      affiliates: "Afiliados",
+      press: "Prensa",
+      careers: "Empleo",
+    },
+    legalTitle: "Información legal y regulatoria",
+    legal: {
+      policy: "Política de seguridad de la información",
+      terms: "Términos y condiciones",
+      disclosures: "Divulgaciones",
+      privacy: "Política de privacidad",
+    },
+    getTheApp: "Descargue la app de Fundora",
+    about:
+      "Fundora es un mercado digital de inversiones impulsado por la tecnología, diseñado para nigerianos en el país y en la diáspora. Ayudamos a los usuarios a descubrir, comparar y acceder a productos financieros autorizados, como inversiones y seguros, a través de instituciones asociadas reguladas. Fundora gestiona la incorporación digital, la orquestación de monederos (solo registro contable), el enrutamiento de transacciones y los informes consolidados de cartera, mientras que todos los fondos de los clientes se mantienen y gestionan de forma segura por custodios y proveedores autorizados. Fundora no actúa como gestor de activos, intermediario ni custodio.",
+    followOn: "Fundora en {network}",
+  },
+
+  appDownload: {
+    title: "Descargue la app de Fundora",
+    description: "Abra su cuenta, invierta y gestione sus seguros, todo desde su móvil.",
+    close: "Cerrar",
+    qrAlt: "Código QR que enlaza con la app de Fundora en Google Play",
+    qrTitle: "¿Está en su ordenador?",
+    qrBody: "Escanee el código con la cámara de su móvil Android para descargar la app en Google Play.",
+    googlePlayEyebrow: "Disponible en",
+    appStoreEyebrow: "Descárgala en",
+    available: "Disponible",
+    comingSoon: "Próximamente",
+    platformApp: "App para {platform}",
+    unavailable: "La app para {platform} aún no está disponible para descargar.",
+    unavailableSr: "la app para {platform} aún no está disponible para descargar",
+    linkSr: "app para {platform}, se abre en una pestaña nueva",
+    bannerLabel: "Descargue la app de Fundora",
+    bannerSubtitle: "Invierta y asegúrese desde su móvil",
+    bannerCta: "Descargar",
+    bannerCtaSr: "en {store}, se abre en una pestaña nueva",
+    bannerDismiss: "Cerrar el aviso de la app",
+  },
+
+  home: {
+    heroTitle: "Construya, haga crecer, proteja y transmita su patrimonio con claridad.",
+    heroSubtitle: "Fundora está formando la próxima generación de familias prósperas de África.",
+    heroNote:
+      "Asesoramos a africanos en su país y en el extranjero sobre inversión, protección de su patrimonio, creación de fondos fiduciarios y construcción de legados financieros a largo plazo.",
+    valuesTitle: { before: "Ayudamos a los africanos de todo el mundo a construir", highlight: "un patrimonio duradero", after: "" },
+    values: ["Disciplina", "Ética", "Visión de futuro"],
+    audienceTitle: "Pensado para africanos que se toman en serio su patrimonio",
+    audienceSubtitle: "Fundora acompaña a:",
+    audience: [
+      "Profesionales que construyen su seguridad financiera a largo plazo",
+      "Familias que planifican su protección y su legado",
+      "Africanos de la diáspora que gestionan sus finanzas entre países",
+    ],
+    frameworkTitle: "Un marco patrimonial completo",
+    frameworkTabs: "Marco patrimonial",
+    framework: [
+      {
+        title: "Invertir",
+        description: "Haga crecer su capital con soluciones de inversión estructuradas y basadas en el análisis.",
+        items: ["Fondos de inversión", "Acciones e instrumentos de renta fija", "Inversiones alternativas"],
+        cta: "Explorar inversiones",
+        imageAlt: "Un gráfico de inversión verde en ascenso",
+      },
+      {
+        title: "Proteger",
+        description: "Proteja sus ingresos, sus activos y su futuro.",
+        items: ["Seguros de vida y salud", "Protección de ingresos", "Cobertura de activos y empresas"],
+        cta: "Explorar protección",
+        imageAlt: "Un escudo protector",
+      },
+      {
+        title: "Asesoría",
+        description: "Reciba orientación personalizada para decisiones financieras complejas.",
+        items: ["Consultoría financiera", "Asesoría patrimonial privada", "Apoyo empresarial y estratégico"],
+        cta: "Hablar con un asesor",
+        imageAlt: "El escritorio de un asesor",
+      },
+    ],
+    calmTitle: "Una estrategia serena vale más que los consejos ruidosos",
+    calmSubtitle: "Creemos que el patrimonio se construye con:",
+    calm: ["Ejecución disciplinada", "Perspectiva a largo plazo", "Conciencia del riesgo", "Pensamiento claro"],
+    supportTitle: "Apoyo estructurado en cada nivel",
+    support: [
+      { title: "FACAP", body: "Planificación financiera integral" },
+      { title: "Asesoría patrimonial privada", body: "Estrategia a medida para grandes patrimonios" },
+      { title: "Consultas", body: "Claridad para las decisiones clave" },
+      { title: "Consultoría empresarial", body: "Estructura financiera para crecer" },
+    ],
+    leadershipTitle: "Nuestro liderazgo",
+    leadershipSubtitle: "Guiados por la experiencia, la integridad y la visión:",
+    leaderName: "Dr. Seyi Abiodun",
+    leaderRole: "Fundador y estratega patrimonial jefe",
+    leaderBody:
+      "Fundora está dirigida por el Dr. Seyi Abiodun, un profesional financiero experimentado comprometido con ayudar a los africanos a construir y proteger su patrimonio de forma responsable. Aquí le orientamos, no le vendemos.",
+    leaderCta: "Conozca a nuestro equipo directivo",
+    leaderAlt: "Dr. Seyi Abiodun, fundador de Fundora",
+  },
+
+  about: {
+    heroTitle: "Fundora está formando la próxima generación de familias prósperas de África.",
+    heroSubtitle:
+      "Fundora es una firma profesional de asesoría patrimonial que ayuda a los africanos a construir, hacer crecer, proteger y transmitir su patrimonio con disciplina y visión a largo plazo.",
+    heroNote:
+      "Asesoramos a africanos en su país y en el extranjero sobre inversión, protección de su patrimonio, creación de fondos fiduciarios y construcción de legados financieros a largo plazo.",
+    philosophyEyebrow: "Nuestra filosofía",
+    philosophyTitle: "El patrimonio debe transmitir calma, no caos",
+    philosophySubtitle: "Creemos que:",
+    philosophyAlt: "Una caja fuerte con una moneda de naira de oro",
+    philosophy: [
+      "El patrimonio se construye de forma intencionada, no por casualidad",
+      "Un buen consejo debe reducir la ansiedad, no aumentarla",
+      "El pensamiento a largo plazo siempre supera a las ganancias rápidas",
+    ],
+    missionEyebrow: "Nuestra misión",
+    missionTitle: "Formar la próxima generación de familias prósperas de África.",
+    missionSubtitle: "Fundora existe para convertir los ingresos africanos en un patrimonio duradero mediante:",
+    mission: [
+      "Educación financiera de primer nivel",
+      "Orientación estratégica de inversión",
+      "Protección sólida del patrimonio y frente a riesgos",
+      "Planificación patrimonial multigeneracional",
+    ],
+    visionEyebrow: "Nuestra visión",
+    visionTitle: {
+      before: "Ser el",
+      highlight: "socio patrimonial",
+      after: "de confianza de las primeras familias africanas millonarias, conectadas con el mundo y financieramente independientes",
+    },
+    howTitle: "Cómo trabajamos",
+    howEyebrow: "Nuestro enfoque de asesoría",
+    howSubtitle: "Cada relación con Fundora se rige por cuatro principios:",
+    howAlt: "Una asesora de Fundora revisando el plan de un cliente",
+    principles: [
+      { title: "Primero, la claridad", body: "Simplificamos lo complejo antes de recomendar cualquier acción." },
+      { title: "Siempre con estructura", body: "Cada plan se basa en un sistema, no en las emociones." },
+      { title: "La protección importa", body: "Planificamos para la incertidumbre, no solo para el crecimiento." },
+      { title: "Visión a largo plazo", body: "Nos centramos en la sostenibilidad, no en la especulación." },
+    ],
+    leadershipTitle: "Un liderazgo en el que puede confiar",
+    leadershipSubtitle: "Guiados por la experiencia, la integridad y la visión:",
+    followLeader: "Siga al Dr. Seyi Abiodun",
+    leaderOn: "Dr. Seyi Abiodun en {network}",
+    leaderBio: [
+      "El Dr. Seyi Abiodun es un estratega financiero con una amplia experiencia asesorando a particulares, familias y empresas en la creación y protección de patrimonio y en la planificación a largo plazo.",
+      "Es conocido por su enfoque sereno y estructurado de las finanzas, que ayuda a sus clientes a pensar con claridad, actuar con sensatez y planificar con responsabilidad. En Fundora, el asesoramiento nunca se hace con prisas. A los clientes se les orienta, no se les presiona.",
+    ],
+  },
+
+  invest: {
+    heroTitle: "Invierta con claridad, no a ciegas",
+    heroSubtitle: "Haga crecer su dinero con estrategias de inversión estructuradas y a largo plazo.",
+    heroNote:
+      "En Fundora, invertir no consiste en perseguir tendencias ni en intentar adivinar el mercado. Se trata de construir patrimonio de forma deliberada, con instrumentos adaptados a sus objetivos, su horizonte temporal y su tolerancia al riesgo.",
+    productsTitle: "Acciones e inversiones en mercados",
+    productsCta: "Empezar a invertir",
+    products: [
+      { title: "Acciones de EE. UU.", body: "Compre acciones de empresas estadounidenses." },
+      { title: "Acciones nigerianas", body: "Compre acciones de empresas locales." },
+      { title: "Letras del Tesoro", body: "Invierta en letras del Tesoro del Estado." },
+      { title: "Ahorro en nairas", body: "Obtenga hasta un 16 % anual." },
+      { title: "Rentabilidad fija", body: "Obtenga hasta un 6 % de rentabilidad en dólares." },
+      { title: "Cartera gestionada", body: "Deje que un experto gestione sus fondos." },
+    ],
+  },
+
+  protect: {
+    heroTitle: "El patrimonio crece más rápido cuando está bien protegido",
+    heroSubtitle: "Proteger sus ingresos, su familia y sus activos aporta solidez y resiliencia a su plan patrimonial.",
+    heroNote: "En Fundora, la protección no tiene que ver con el miedo. Tiene que ver con la responsabilidad, la previsión y la tranquilidad.",
+  },
+
+  insurance: {
+    heroTitle: "Protección superior, ofrecida con confianza.",
+    heroSubtitle:
+      "En Fundora Insure Partnering Insuretech Limited, reinventamos el seguro como una experiencia fluida e inteligente, diseñada en torno a usted.",
+    heroCta: "Elegir un plan de seguro",
+    redefiningTitle: "Reinventamos el seguro",
+    redefining: [
+      "Gracias a la solidez de nuestra alianza de confianza, acceder a una cobertura fiable y de calidad es más rápido, más claro y totalmente sencillo.",
+      "Ya se trate de proteger su vehículo, asegurar su futuro o viajar con tranquilidad, nuestras soluciones se adaptan para proteger lo que más importa, con flexibilidad y precisión.",
+    ],
+    offeringsTitle: "Descubra nuestra gama de productos:",
+    offerings: [
+      { title: "Seguro de automóvil", body: "Conduzca con confianza. Le cubrimos.", imageAlt: "Cobertura de seguro de automóvil" },
+      { title: "Seguro de vida", body: "Proteja a las personas que más le importan.", imageAlt: "Planificación del seguro de vida" },
+      { title: "Seguro de viaje", body: "Viaje con confianza y una protección fiable.", imageAlt: "Protección del seguro de viaje" },
+      { title: "Y mucho más...", body: "Descubra una cobertura para cada necesidad.", imageAlt: "Otros productos de seguro" },
+    ],
+    carouselLabel: "Productos de seguro",
+    showSlide: "Mostrar: {item}",
+  },
+
+  programs: {
+    heroTitle: "Orientación estructurada para cada etapa de su patrimonio",
+    heroSubtitle:
+      "Cada etapa de la vida requiere un nivel de apoyo distinto. Fundora ofrece programas claramente definidos, diseñados para acompañarle allí donde se encuentre y guiarle con estructura y claridad.",
+    heroNote: "Tanto si está empezando como si está creciendo o perfeccionando su vida financiera, hay un programa pensado para usted.",
+    facapTitle: "FACAP",
+    facap: [
+      "El Finance and Career Accountability Program (FACAP) es una experiencia integral de planificación financiera para personas y familias que desean una visión y un control completos de su vida financiera.",
+      "Este programa reúne todas las áreas clave (ingresos, inversión, protección y planificación a largo plazo) en una estructura clara.",
+    ],
+    facapAlt: "Una sesión de FACAP con participantes revisando sus planes",
+    idealTitle: "FACAP es ideal si desea:",
+    ideal: [
+      "Comprender con claridad la planificación financiera",
+      "Aprender a invertir en acciones e instrumentos de renta fija desde cero",
+    ],
+    idealCta: "Inscribirse en la próxima edición de FACAP",
+    frameworkTitle: "Nuestro marco patrimonial FACAP",
+    offerings: [
+      {
+        title: "Consulta",
+        body: "No todas las situaciones requieren un programa a largo plazo. A veces basta con una conversación clara para dar el siguiente paso correcto.",
+        items: [
+          "Decisiones de inversión",
+          "Dudas sobre seguros o protección",
+          "Cuestiones financieras transfronterizas",
+          "Planificación profesional, de ingresos o de transición",
+        ],
+        cta: "Reservar una consulta",
+        imageAlt: "Una consulta entre un asesor y un cliente",
+      },
+      {
+        title: "Asesoría patrimonial privada",
+        body: "La asesoría patrimonial privada está pensada para clientes con una vida financiera compleja que necesitan una estrategia a medida, discreción y supervisión a largo plazo.",
+        items: [
+          "Estrategia de inversión personalizada",
+          "Planificación de la asignación de activos y la diversificación",
+          "Integración del riesgo y la protección",
+          "Preservación del patrimonio y planificación del legado",
+        ],
+        cta: "Solicitar asesoría privada",
+        imageAlt: "Un asesor patrimonial privado en una reunión",
+      },
+      {
+        title: "Consultoría empresarial",
+        body: "Claridad financiera para fundadores y propietarios de empresas.",
+        items: [
+          "Estructura y planificación financiera",
+          "Claridad sobre el flujo de caja",
+          "Gestión del riesgo y continuidad del negocio",
+          "Apoyo en decisiones estratégicas",
+        ],
+        cta: "Reservar una consultoría empresarial",
+        imageAlt: "Dos empresarios revisando cifras juntos",
+      },
+    ],
+    chooseEyebrow: "Cómo elegir el programa adecuado",
+    chooseTitle: "Empiece con claridad",
+    chooseSubtitle: "Si no sabe por dónde empezar:",
+    choose: [
+      "Elija **Consulta** para obtener claridad inmediata",
+      "Elija **FACAP** para una estructura financiera personal completa",
+      "Elija **Asesoría patrimonial privada** para una orientación a medida y a largo plazo",
+      "Elija **Consultoría empresarial** para un apoyo centrado en su empresa",
+    ],
+  },
+
+  download: {
+    title: "Su patrimonio, en su bolsillo.",
+    body: "Descargue la app de Fundora para abrir su cuenta, invertir y gestionar sus seguros desde el móvil.",
+    highlights: [
+      "Invierta en fondos, acciones y renta fija",
+      "Contrate y gestione sus seguros",
+      "Siga toda su cartera en un solo lugar",
+    ],
+    chooseStore: "Elija su tienda",
+  },
+
+  contact: {
+    title: "Contacto",
+    subtitle: "¿Tiene alguna pregunta sobre inversiones, seguros o nuestros programas? Hable con un asesor o empiece en la app de Fundora.",
+    consultTitle: "Hable con un asesor",
+    consultBody: "Reserve una consulta de 30 minutos en el horario que mejor le convenga.",
+    appTitle: "Empiece en la app",
+    appBody: "Abra su cuenta, invierta y gestione sus seguros desde el móvil.",
+    faqPrompt: "¿Busca una respuesta rápida?",
+    faqLink: "Consulte nuestras preguntas frecuentes",
+  },
+
+  notFound: {
+    message: "No se pudo encontrar esta página.",
+    home: "Ir al inicio",
+  },
+
+  legal: {
+    company: "Fundora Technologies Ltd",
+    effectiveDate: "Fecha de entrada en vigor:",
+    version: "Versión:",
+    contents: "Índice",
+    sections: "Secciones de {title}",
+    email: "Correo electrónico:",
+    address: "Dirección:",
+    phone: "Teléfono:",
+    approvedBy: "Aprobado por",
+    board: "Consejo de Administración",
+    translationNotice:
+      "Esta traducción se ofrece solo por comodidad. Si difiere de la versión en inglés, prevalecerá la versión en inglés.",
+    readEnglish: "Leer la versión en inglés",
+  },
+};
+
+export default es;
